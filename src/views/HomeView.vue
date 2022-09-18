@@ -1,6 +1,7 @@
 <script setup>
 import NavView from "../components/NavView.vue";
 import TokenGrid from "../components/TokenGrid.vue";
+import TestimoniaCarosel from "../components/TestimoniaCarosel.vue";
 </script>
 
 <template>
@@ -155,6 +156,22 @@ import TokenGrid from "../components/TokenGrid.vue";
         </div>
         <p id="tok_def">The coins and giftcards we currently deal on</p>
         <TokenGrid />
+      </div>
+    </div>
+    <div class="testimonial_sect">
+      <div class="content_tes">
+        <div class="intro_tes">
+          <img src="../assets/images/Megaphone.svg" alt="" />
+          <div class="int_tes">
+            <h4>What Our Clients Say About Us</h4>
+            <p>
+              We leave room for criticism and applause of our service, after
+              every transaction we provide users, with the link to rate our
+              service, independently . Here is what they had to say
+            </p>
+          </div>
+        </div>
+        <TestimoniaCarosel />
       </div>
     </div>
   </main>
@@ -433,6 +450,34 @@ a {
     }
     #tok_def {
       font-family: "Source Code Pro", monospace;
+    }
+  }
+}
+.testimonial_sect {
+  margin: 1.5rem 0;
+  width: 100%;
+  .content_tes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .intro_tes {
+      width: 60%;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      .int_tes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h4 {
+          margin: 0px;
+          color: #0471a6;
+          font-size: 28px;
+          text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+      }
     }
   }
 }

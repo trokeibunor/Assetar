@@ -46,7 +46,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 120px;
+  grid-gap: 80px;
   place-content: center;
   .coin_card {
     background: linear-gradient(119.06deg, #76b9da 39.35%, #2e7093 111.86%);
