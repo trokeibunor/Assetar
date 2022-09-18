@@ -1,5 +1,6 @@
 <script setup>
 import NavView from "../components/NavView.vue";
+import TokenGrid from "../components/TokenGrid.vue";
 </script>
 
 <template>
@@ -76,6 +77,84 @@ import NavView from "../components/NavView.vue";
           </p>
           <a href="#">Talk to us</a>
         </div>
+      </div>
+    </div>
+    <div class="confidence">
+      <div id="conf_intro">
+        <h5>THE BEST WAY TO TRADE</h5>
+        <h4>The Best Cryptocurrency Vendor</h4>
+      </div>
+      <div class="conf_grid">
+        <div class="inner_conf">
+          <img src="../assets/images/place_holder_money.svg" alt="" srcset="" />
+          <p id="title_conf">100% Satisfaction</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum
+            mauris non pellentesque accumsan. Nec pellentesque eget.
+          </p>
+        </div>
+        <div class="inner_conf">
+          <img
+            src="../assets/images/place_holder_chating.svg"
+            alt=""
+            srcset=""
+          />
+          <p id="title_conf">24/7 Active</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum
+            mauris non pellentesque accumsan. Nec pellentesque eget.
+          </p>
+        </div>
+        <div class="inner_conf">
+          <img
+            src="../assets/images/place_holder_trading.svg"
+            alt=""
+            srcset=""
+          />
+          <p id="title_conf">Smooth Trading</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum
+            mauris non pellentesque accumsan. Nec pellentesque eget.
+          </p>
+        </div>
+        <div class="inner_conf">
+          <img src="../assets/images/place_holder_reli.svg" alt="" srcset="" />
+          <p id="title_conf">100% Reliability</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum
+            mauris non pellentesque accumsan. Nec pellentesque eget.
+          </p>
+        </div>
+        <div class="inner_conf">
+          <img
+            src="../assets/images/place_holder_trading.svg"
+            alt=""
+            srcset=""
+          />
+          <p id="title_conf">Bonus & Incentives</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum
+            mauris non pellentesque accumsan. Nec pellentesque eget.
+          </p>
+        </div>
+        <div class="inner_conf">
+          <img src="../assets/images/place_holder_money.svg" alt="" srcset="" />
+          <p id="title_conf">Best Rates</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dictum
+            mauris non pellentesque accumsan. Nec pellentesque eget.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="token_offers">
+      <div class="content_tok">
+        <div class="title_tok">
+          <h2>Coins and Giftcards</h2>
+          <hr />
+        </div>
+        <p id="tok_def">The coins and giftcards we currently deal on</p>
+        <TokenGrid />
       </div>
     </div>
   </main>
@@ -264,6 +343,96 @@ a {
       a {
         background: linear-gradient(119.06deg, #76b9da -6.12%, #2e7093 111.86%);
       }
+    }
+  }
+}
+.confidence {
+  width: 80%;
+  margin: 4rem auto 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  #conf_intro {
+    text-align: center;
+    h5 {
+      color: #e84855;
+      margin: 0px;
+    }
+    h4 {
+      font-size: 28px;
+      margin: 0px;
+    }
+  }
+  .conf_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 16px;
+    margin: 2rem 0px;
+    .inner_conf {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      justify-content: center;
+      align-content: center;
+      border-radius: 8px;
+      padding: 24px;
+      background: #ffffff;
+      box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+      img {
+        align-self: center;
+        max-width: 150px;
+        width: 150px;
+        height: 150px;
+      }
+      p {
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        font-weight: 300;
+      }
+      p#title_conf {
+        font-weight: 600;
+      }
+    }
+  }
+}
+.token_offers {
+  width: 100%;
+  background: linear-gradient(137.98deg, #0471a6 -4.84%, #e84855 108.7%);
+  color: #fff;
+  .content_tok {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding: 2rem 0px;
+    .title_tok {
+      display: flex;
+      width: fit-content;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2;
+      margin: 1rem 0px;
+      h2 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 32px;
+        font-family: "Source Code Pro", monospace;
+      }
+      hr {
+        width: 79px;
+        height: 8px;
+        background: #ff8b7b;
+        border-radius: 8px;
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+      }
+    }
+    #tok_def {
+      font-family: "Source Code Pro", monospace;
     }
   }
 }
