@@ -2,6 +2,8 @@
 import NavView from "../components/NavView.vue";
 import TokenGrid from "../components/TokenGrid.vue";
 import TestimoniaCarosel from "../components/TestimoniaCarosel.vue";
+import FrequentlyAsked from "../components/FrequentlyAsked.vue";
+import ContactSection from "../components/ContactSection.vue";
 </script>
 
 <template>
@@ -173,6 +175,15 @@ import TestimoniaCarosel from "../components/TestimoniaCarosel.vue";
         </div>
         <TestimoniaCarosel />
       </div>
+    </div>
+    <div class="freqAsk">
+      <div class="con_freq">
+        <img src="../assets/images/freq_img.svg" alt="" />
+        <FrequentlyAsked />
+      </div>
+    </div>
+    <div class="contactSection">
+      <ContactSection />
     </div>
   </main>
 </template>
@@ -480,5 +491,18 @@ a {
       }
     }
   }
+}
+.freqAsk {
+  margin: 3rem 0px;
+  .con_freq {
+    width: 90%;
+    display: flex;
+    gap: 32px;
+    margin: 0px auto;
+  }
+}
+.contactSection {
+  margin: 3rem 0px;
+  width: 100%;
 }
 </style>
