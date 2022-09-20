@@ -21,7 +21,7 @@
             <img src="../assets/images/Instagram.svg" alt="" />
           </a>
           <a href="http://" target="_blank" rel="noopener noreferrer">
-            <img src="../assets/images/whatsapp circle.svg" alt="" />
+            <img src="../assets/images/whatsapp.svg" alt="" />
           </a>
           <a href="http://" target="_blank" rel="noopener noreferrer">
             <img src="../assets/images/Gmail.svg" alt="" />
