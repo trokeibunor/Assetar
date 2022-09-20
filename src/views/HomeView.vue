@@ -4,6 +4,7 @@ import TokenGrid from "../components/TokenGrid.vue";
 import TestimoniaCarosel from "../components/TestimoniaCarosel.vue";
 import FrequentlyAsked from "../components/FrequentlyAsked.vue";
 import ContactSection from "../components/ContactSection.vue";
+import FooterView from "../components/FooterView.vue";
 </script>
 
 <template>
@@ -185,6 +186,7 @@ import ContactSection from "../components/ContactSection.vue";
     <div class="contactSection">
       <ContactSection />
     </div>
+    <FooterView />
   </main>
 </template>
 <style lang="scss">
@@ -316,7 +318,7 @@ a {
 .convincer {
   width: 100%;
   .cont {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -375,7 +377,7 @@ a {
   }
 }
 .confidence {
-  width: 80%;
+  width: 70%;
   margin: 4rem auto 1rem;
   display: flex;
   flex-direction: column;
@@ -495,7 +497,7 @@ a {
 .freqAsk {
   margin: 3rem 0px;
   .con_freq {
-    width: 90%;
+    width: 80%;
     display: flex;
     gap: 32px;
     margin: 0px auto;
