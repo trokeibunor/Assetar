@@ -1,6 +1,7 @@
 <script setup>
 import NavBar from "../components/NavBar.vue";
 import QualityCon from "../components/QualityCon.vue";
+import ConvincerFlex from "../components/ConvincerFlex.vue";
 </script>
 <template>
   <main>
@@ -21,6 +22,7 @@ import QualityCon from "../components/QualityCon.vue";
       </div>
     </section>
     <QualityCon />
+    <ConvincerFlex />
   </main>
 </template>
 <style lang="scss">

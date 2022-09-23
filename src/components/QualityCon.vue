@@ -1,5 +1,16 @@
 <template>
   <section class="qualities">
+    <img
+      class="pattern pattern_wave"
+      src="../assets/images/patternWaves.svg"
+      alt=""
+      srcset=""
+    />
+    <img
+      class="pattern pattern_shape"
+      src="../assets/images/patternShapes.svg"
+      alt=""
+    />
     <div class="qualitiesCon">
       <p id="title">THE BEST WAY TO TRADE</p>
       <h2>The Best Cryptocurrency Vendor</h2>
@@ -70,7 +81,22 @@
   height: auto;
   border-radius: 80px;
   position: relative;
-  margin-top: 5rem;
+  margin-top: 10rem;
+  overflow: hidden;
+  .pattern {
+    position: absolute;
+
+    z-index: 0;
+    opacity: 0.8;
+  }
+  .pattern_wave {
+    top: 0px;
+    left: 0px;
+  }
+  .pattern_shape {
+    bottom: 0px;
+    right: -5%;
+  }
   #title {
     font-weight: bold;
   }
@@ -86,6 +112,8 @@
     width: 80%;
     padding: 5rem 0px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
     .qualityGrid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -96,7 +124,7 @@
       .qualityBox {
         width: 60%;
         padding: 24px;
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         border-radius: 4px;
         background-color: #035a85;
         display: flex;
