@@ -1,0 +1,25 @@
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #252525;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 600px;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
