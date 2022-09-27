@@ -89,7 +89,7 @@
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: repeat(6, 1fr);
       column-gap: 8px;
-      row-gap: 16px;
+      row-gap: 12px;
       width: 100%;
       height: 90vh;
       .tsCard {

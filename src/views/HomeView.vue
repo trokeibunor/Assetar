@@ -4,6 +4,7 @@ import QualityCon from "../components/QualityCon.vue";
 import ConvincerFlex from "../components/ConvincerFlex.vue";
 import TokenHoleder from "../components/TokenHoleder.vue";
 import TestimonialSect from "../components/TestimonialSect.vue";
+import FreqAsked from "../components/FreqAsked.vue";
 </script>
 <template>
   <main>
@@ -27,6 +28,7 @@ import TestimonialSect from "../components/TestimonialSect.vue";
     <ConvincerFlex />
     <TokenHoleder />
     <TestimonialSect />
+    <FreqAsked />
   </main>
 </template>
 <style lang="scss">
