@@ -2,6 +2,8 @@
 import NavBar from "../components/NavBar.vue";
 import QualityCon from "../components/QualityCon.vue";
 import ConvincerFlex from "../components/ConvincerFlex.vue";
+import TokenHoleder from "../components/TokenHoleder.vue";
+import TestimonialSect from "../components/TestimonialSect.vue";
 </script>
 <template>
   <main>
@@ -23,6 +25,8 @@ import ConvincerFlex from "../components/ConvincerFlex.vue";
     </section>
     <QualityCon />
     <ConvincerFlex />
+    <TokenHoleder />
+    <TestimonialSect />
   </main>
 </template>
 <style lang="scss">
