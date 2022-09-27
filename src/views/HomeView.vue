@@ -5,6 +5,8 @@ import ConvincerFlex from "../components/ConvincerFlex.vue";
 import TokenHoleder from "../components/TokenHoleder.vue";
 import TestimonialSect from "../components/TestimonialSect.vue";
 import FreqAsked from "../components/FreqAsked.vue";
+import ContactSect from "../components/ContactSect.vue";
+import SubSect from "../components/SubSect.vue";
 </script>
 <template>
   <main>
@@ -29,6 +31,8 @@ import FreqAsked from "../components/FreqAsked.vue";
     <TokenHoleder />
     <TestimonialSect />
     <FreqAsked />
+    <ContactSect />
+    <SubSect />
   </main>
 </template>
 <style lang="scss">
