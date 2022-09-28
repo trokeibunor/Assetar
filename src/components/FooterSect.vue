@@ -1,0 +1,93 @@
+<template>
+  <footer>
+    <div class="list_row">
+      <div class="ftContact">
+        <h5>Contact</h5>
+        <ul>
+          <li>
+            <a href="tel:+"
+              ><img src="../assets/images/phone_icon.svg" alt="" /> +234
+              9015379412</a
+            >
+          </li>
+          <li>
+            <a href="mailto:">
+              <img
+                src="../assets/images/mail_ftIcon.svg"
+                alt=""
+              />asseterexchange@gmail.com
+            </a>
+          </li>
+          <li>
+            <img src="../assets/images/location_pin.svg" alt="" />
+            One of those places you want to be at the end of a long day
+          </li>
+        </ul>
+      </div>
+      <div class="ftlinks">
+        <h5>Links</h5>
+        <ul>
+          <li><a href="">Frequently asked questions</a></li>
+          <li><a href="">How we operate</a></li>
+          <li><a href="">Tokens</a></li>
+          <li><a href="">Our story</a></li>
+          <li><a href="">Contact us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyRight">copyright &copy; AssetarExchange 2022.</div>
+  </footer>
+</template>
+
+<script setup></script>
+
+<style lang="scss" scoped>
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  width: 100%;
+  .list_row {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    div {
+      h5 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      ul {
+        img {
+          width: 24px;
+        }
+        li,
+        a {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          //   justify-content: center;
+          a {
+            text-decoration: none;
+            color: #000;
+          }
+        }
+        li {
+          margin: 12px 0px;
+        }
+      }
+    }
+  }
+  .copyRight {
+    width: 100%;
+    background-color: #065c86;
+    text-align: center;
+    color: #fff;
+    padding: 2rem 0px;
+    border-radius: 40px 40px 0px 0px;
+  }
+}
+</style>

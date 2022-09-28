@@ -7,6 +7,7 @@ import TestimonialSect from "../components/TestimonialSect.vue";
 import FreqAsked from "../components/FreqAsked.vue";
 import ContactSect from "../components/ContactSect.vue";
 import SubSect from "../components/SubSect.vue";
+import FooterSect from "../components/FooterSect.vue";
 </script>
 <template>
   <main>
@@ -33,6 +34,7 @@ import SubSect from "../components/SubSect.vue";
     <FreqAsked />
     <ContactSect />
     <SubSect />
+    <FooterSect />
   </main>
 </template>
 <style lang="scss">
