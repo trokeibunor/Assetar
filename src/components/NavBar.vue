@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <img src="../assets/images/logo.png" alt="logoImage" />
+    <img id="logo" src="../assets/images/logo.png" alt="logoImage" />
     <div class="navMenu">
       <a @click="routeTo('/')">Home</a>
       <a @click="routeTo('/#token')">Token</a>
@@ -28,18 +28,22 @@ nav {
   padding: 1rem 0px;
   position: relative;
   z-index: 10;
+  #logo {
+    width: 48px;
+  }
   .navMenu {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 24px;
+    gap: 18px;
     a {
       cursor: pointer;
-      //   margin: 0px 16px;
       text-decoration: none;
-      font-size: 18px;
-      // color: #252525;
+      font-size: 14px;
       color: inherit;
+    }
+    a:hover {
+      font-weight: 600;
     }
     a#conBtn {
       background-color: #035a85;

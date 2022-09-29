@@ -85,7 +85,6 @@
   overflow: hidden;
   .pattern {
     position: absolute;
-
     z-index: 0;
     opacity: 0.8;
   }
@@ -99,6 +98,7 @@
   }
   #title {
     font-weight: bold;
+    font-size: 14px;
   }
   #anTalk {
     width: 40%;
@@ -122,9 +122,9 @@
       justify-items: center;
       margin: 2rem 0px;
       .qualityBox {
-        width: 60%;
+        width: 65%;
         padding: 24px;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
         border-radius: 4px;
         background-color: #035a85;
         display: flex;

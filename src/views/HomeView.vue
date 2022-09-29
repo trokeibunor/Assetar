@@ -79,7 +79,7 @@ main {
       position: relative;
       img {
         position: absolute;
-        top: -40%;
+        top: -50%;
         right: 0;
       }
     }

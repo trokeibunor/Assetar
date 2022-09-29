@@ -75,7 +75,7 @@
     width: 80%;
     margin: 0 auto;
     .tsIntro {
-      width: 40%;
+      width: 50%;
       margin: 0px auto;
       text-align: center;
       h3 {
@@ -84,7 +84,7 @@
       }
     }
     .tsGrid {
-      padding: 2rem 0px;
+      padding: 1rem 0px;
       display: grid;
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: repeat(6, 1fr);

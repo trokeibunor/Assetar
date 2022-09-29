@@ -30,7 +30,7 @@
 <style lang="scss" scoped>
 .frequently {
   margin: 2rem 0px;
-  padding: 3rem 0px;
+  padding: 2rem 0px;
   background-color: #fff;
   border-radius: 16px;
   display: flex;
@@ -39,7 +39,7 @@
   height: auto;
   margin: 0 auto;
   .fqIntro {
-    width: 40%;
+    width: 50%;
     margin: 0px auto;
     text-align: center;
     h3 {
@@ -56,12 +56,12 @@
       margin: 1rem 0;
       padding: 8px 64px;
       border-radius: 4px;
-      border: 1px solid #000;
+      border: 1px solid #252525;
       cursor: pointer;
       #fqTitle {
         color: #065c86;
-        font-weight: 700;
-        font-size: 18px;
+        font-weight: 600;
+        font-size: 16px;
       }
     }
     .fqBox:hover {

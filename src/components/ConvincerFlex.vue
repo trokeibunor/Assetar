@@ -26,11 +26,16 @@
       </div>
       <img src="../assets/images/downCardImg.png" alt="" />
     </div>
-    <a href="#">Contact Us</a>
+    <a @click="routeTo('/#contact')">Contact Us</a>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import router from "../router";
+function routeTo(x) {
+  router.push(x);
+}
+</script>
 
 <style lang="scss" scoped>
 .convincerComp {
@@ -55,7 +60,7 @@
         color: #035a85;
       }
       h2 {
-        margin: 1.5rem 0px;
+        margin: 1rem 0px;
       }
       p {
         line-height: 140%;
@@ -69,7 +74,7 @@
     background-color: #035a85;
     text-decoration: none;
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
     border-radius: 8px;
     border: 1px solid #fff;
     outline: none;
@@ -77,6 +82,7 @@
     height: fit-content;
     padding: 16px 40px;
     align-self: center;
+    cursor: pointer;
   }
 }
 </style>

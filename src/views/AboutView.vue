@@ -8,11 +8,15 @@
           <p>
             At assetar we prioritize the speed of each customer's transaction
           </p>
-          <img src="../assets/images/move_down.png" alt="" />
+          <img
+            @click="routeTo('/about#fromMan')"
+            src="../assets/images/move_down.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
-    <div class="fromManagement">
+    <div class="fromManagement" id="fromMan">
       <div class="fmText">
         <p id="top">THE BEST WAY TO TRADE</p>
         <h3>From the Management</h3>
@@ -137,6 +141,10 @@
 import NavBar from "../components/NavBar.vue";
 import SubSect from "../components/SubSect.vue";
 import FooterSect from "../components/FooterSect.vue";
+import router from "../router";
+function routeTo(x) {
+  router.push(x);
+}
 </script>
 
 <style lang="scss" scoped>
@@ -225,6 +233,7 @@ import FooterSect from "../components/FooterSect.vue";
     justify-content: space-between;
     align-items: center;
     div {
+      margin: 0px 8px;
       p {
         display: flex;
         gap: 8px;
@@ -285,11 +294,9 @@ import FooterSect from "../components/FooterSect.vue";
   height: auto;
   border-radius: 80px;
   position: relative;
-  margin-top: 10rem;
   overflow: hidden;
   .pattern {
     position: absolute;
-
     z-index: 0;
     opacity: 0.8;
   }
@@ -303,6 +310,7 @@ import FooterSect from "../components/FooterSect.vue";
   }
   #title {
     font-weight: bold;
+    font-size: 14px;
   }
   #anTalk {
     width: 40%;
@@ -326,9 +334,9 @@ import FooterSect from "../components/FooterSect.vue";
       justify-items: center;
       margin: 2rem 0px;
       .qualityBox {
-        width: 60%;
+        width: 65%;
         padding: 24px;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
         border-radius: 4px;
         background-color: #035a85;
         display: flex;

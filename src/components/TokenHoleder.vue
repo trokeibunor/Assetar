@@ -105,7 +105,7 @@
   height: auto;
   border-radius: 80px;
   position: relative;
-  padding: 4rem 0px;
+  padding: 3rem 0px;
   overflow: hidden;
   .pattern {
     position: absolute;
@@ -137,7 +137,7 @@
     .tkGrid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      margin: 2rem 0px;
+      margin: 1rem 0px;
       width: 100%;
       .tokencard {
         background-color: #035a85;

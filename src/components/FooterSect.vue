@@ -27,11 +27,11 @@
       <div class="ftlinks">
         <h5>Links</h5>
         <ul>
-          <li><a href="">Frequently asked questions</a></li>
-          <li><a href="">How we operate</a></li>
-          <li><a href="">Tokens</a></li>
-          <li><a href="">Our story</a></li>
-          <li><a href="">Contact us</a></li>
+          <li><a @click="routeTo('/#faq')">Frequently asked questions</a></li>
+          <li><a @click="routeTo('/about#fromMan')">How we operate</a></li>
+          <li><a @click="routeTo('/#token')">Tokens</a></li>
+          <li><a @click="routeTo('/about')">Our story</a></li>
+          <li><a @click="routeTo('/#contact')">Contact us</a></li>
         </ul>
       </div>
     </div>
@@ -39,7 +39,12 @@
   </footer>
 </template>
 
-<script setup></script>
+<script setup>
+import router from "../router";
+function routeTo(x) {
+  router.push(x);
+}
+</script>
 
 <style lang="scss" scoped>
 ul {
@@ -70,6 +75,7 @@ footer {
           gap: 8px;
           align-items: center;
           //   justify-content: center;
+          cursor: pointer;
           a {
             text-decoration: none;
             color: #000;

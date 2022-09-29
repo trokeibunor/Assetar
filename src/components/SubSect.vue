@@ -35,11 +35,12 @@
       padding: 16px 24px;
       width: 60%;
       border-radius: 4px;
+      border: 1px solid #252525;
       outline: none;
     }
     button {
       background-color: #065c86;
-      font-size: 18px;
+      font-size: 14px;
       margin: 0 8px;
       width: fit-content;
       height: fit-content;

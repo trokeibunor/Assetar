@@ -123,6 +123,9 @@ const message = ref("");
           align-items: center;
           a {
             margin: 0px 8px;
+            img {
+              width: 32px;
+            }
           }
         }
       }
@@ -136,9 +139,9 @@ const message = ref("");
           textarea {
             width: 85%;
             padding: 16px 24px;
-            font-size: 18px;
+            font-size: 16x;
             margin: 12px 0px;
-            border: 2px solid black;
+            border: 1px solid #252525;
             outline: none;
             border-radius: 4px;
           }
@@ -149,9 +152,10 @@ const message = ref("");
             border: none;
             border-radius: 8px;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 14px;
             color: #fff;
             background-color: #035a85;
+            cursor: pointer;
           }
         }
       }
