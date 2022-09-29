@@ -22,8 +22,6 @@ nav {
   margin: 0 auto;
   padding: 1rem 0px;
   position: relative;
-  //   top: 0px;
-  //   left: 0px;
   z-index: 10;
   .navMenu {
     display: flex;
@@ -35,7 +33,8 @@ nav {
       //   margin: 0px 16px;
       text-decoration: none;
       font-size: 18px;
-      color: #252525;
+      // color: #252525;
+      color: inherit;
     }
     a#conBtn {
       background-color: #035a85;

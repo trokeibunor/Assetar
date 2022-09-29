@@ -87,6 +87,7 @@ footer {
     text-align: center;
     color: #fff;
     padding: 2rem 0px;
+    margin-top: 4rem;
     border-radius: 40px 40px 0px 0px;
   }
 }
