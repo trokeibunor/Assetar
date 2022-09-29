@@ -2,15 +2,20 @@
   <nav>
     <img src="../assets/images/logo.png" alt="logoImage" />
     <div class="navMenu">
-      <a href="#">Home</a>
-      <a href="#">Token</a>
-      <a href="#">Our Story</a>
-      <a href="#" id="conBtn">Contact Us</a>
+      <a @click="routeTo('/')">Home</a>
+      <a @click="routeTo('/#token')">Token</a>
+      <a @click="routeTo('about')">Our Story</a>
+      <a @click="routeTo('/#contact')" id="conBtn">Contact Us</a>
     </div>
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+import router from "../router";
+function routeTo(x) {
+  router.push(x);
+}
+</script>
 
 <style lang="scss" scoped>
 nav {

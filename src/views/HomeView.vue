@@ -29,10 +29,10 @@ import FooterSect from "../components/FooterSect.vue";
     </section>
     <QualityCon />
     <ConvincerFlex />
-    <TokenHoleder />
+    <TokenHoleder id="token" />
     <TestimonialSect />
     <FreqAsked />
-    <ContactSect />
+    <ContactSect id="contact" />
     <SubSect />
     <FooterSect />
   </main>
