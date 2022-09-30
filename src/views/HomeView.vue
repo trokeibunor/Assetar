@@ -21,6 +21,7 @@ import FooterSect from "../components/FooterSect.vue";
             At asseter exchange we prioritize the speed of every customers
             transaction
           </p>
+          <a href="#" id="cta">Trade with Us</a>
         </div>
         <div class="heroImage">
           <img src="../assets/images/hero_image.png" alt="" />
@@ -71,6 +72,16 @@ main {
       }
       p {
         width: 60%;
+        margin-bottom: 2rem;
+      }
+      a#cta {
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 8px;
+        font-weight: 700;
+        background-color: #035a85;
+        color: #fff;
+        margin-top: 8px !important;
       }
     }
     .heroImage {
