@@ -18,6 +18,7 @@ function routeTo(x) {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/variables.scss";
 nav {
   display: flex;
   flex-direction: row;
@@ -51,7 +52,20 @@ nav {
       width: fit-content;
       height: fit-content;
       padding: 10px 24px;
-      border-radius: 10px;
+      border-radius: 8px;
+    }
+  }
+}
+// Mobile responsiveness
+@media #{$media-tablet} {
+  nav {
+    width: 90%;
+  }
+}
+@media #{$media-mobile} {
+  nav {
+    .navMenu {
+      display: none;
     }
   }
 }

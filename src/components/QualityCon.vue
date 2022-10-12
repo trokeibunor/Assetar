@@ -74,6 +74,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+@import "../assets/variables.scss";
 .qualities {
   background-color: #035a85;
   color: #fff;
@@ -133,6 +134,30 @@
         align-items: center;
         #titleSm {
           font-weight: 600;
+        }
+      }
+    }
+  }
+}
+@media #{$media-mobile} {
+  .qualities {
+    border-radius: 20px;
+    .qualitiesCon {
+      width: 90%;
+      h2 {
+        font-size: 24px;
+      }
+      p#anTalk {
+        width: 100%;
+      }
+      .qualityGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        .qualityBox {
+          width: 85%;
+          padding: 2rem 1rem;
         }
       }
     }

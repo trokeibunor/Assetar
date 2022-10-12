@@ -8,9 +8,24 @@ import FreqAsked from "../components/FreqAsked.vue";
 import ContactSect from "../components/ContactSect.vue";
 import SubSect from "../components/SubSect.vue";
 import FooterSect from "../components/FooterSect.vue";
+import { ref } from "vue";
+const subscribeEmail = ref("");
 </script>
 <template>
   <main>
+    <!-- SignUp modal -->
+    <div class="signUpModal" v-if="hasSubscribed">
+      <button @click="clearModal">
+        <img src="../assets/images/modal_remove_icon.svg" alt="" />
+      </button>
+      <h3>Subscribe To our Emailing List</h3>
+      <input
+        type="email"
+        v-model="subscribeEmail"
+        placeholder="Email Address"
+      />
+      <button @click="submitEmail">Subscribe</button>
+    </div>
     <NavBar />
     <section class="hero">
       <div class="heroContent">
@@ -39,9 +54,23 @@ import FooterSect from "../components/FooterSect.vue";
   </main>
 </template>
 <style lang="scss">
+@import "../assets/variables.scss";
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
+$media-desktop-strict: "only screen and (min-width: 768px)";
 main {
   width: 100%;
   display: relative;
+  overflow: hidden;
+  // Modals
+  .signUpModal {
+    display: flex;
+    width: 60%;
+    height: auto;
+    background: #fff;
+  }
 }
 // Hero Section
 .hero {
@@ -88,10 +117,39 @@ main {
       width: 100%;
       height: 80vh;
       position: relative;
+      // overflow: hidden;
       img {
+        width: 180%;
         position: absolute;
-        top: -50%;
-        right: 0;
+        top: -60%;
+        right: -40%;
+      }
+    }
+  }
+}
+@media #{$media-mobile} {
+  .hero {
+    .heroContent {
+      flex-direction: column-reverse;
+      width: 80%;
+      margin: 0 auto;
+      .heroText {
+        h1 {
+          font-size: 24px;
+          font-weight: 700;
+        }
+        p {
+          width: 90%;
+        }
+      }
+      .heroImage {
+        height: 45vh;
+        img {
+          position: relative;
+          width: 150%;
+          top: -40%;
+          right: 25%;
+        }
       }
     }
   }
