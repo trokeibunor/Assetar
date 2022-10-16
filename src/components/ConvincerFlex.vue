@@ -38,6 +38,7 @@ function routeTo(x) {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/variables.scss";
 .convincerComp {
   width: 100%;
   background-color: #f6fafc;
@@ -83,6 +84,20 @@ function routeTo(x) {
     padding: 16px 40px;
     align-self: center;
     cursor: pointer;
+  }
+}
+@media #{$media-mobile} {
+  .convincerComp {
+    .convincerCard,
+    #second {
+      margin: 1.5rem auto;
+      width: 80%;
+      flex-direction: column-reverse;
+      text-align: center;
+      img {
+        width: 40%;
+      }
+    }
   }
 }
 </style>

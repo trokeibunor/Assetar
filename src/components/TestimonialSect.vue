@@ -68,6 +68,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+@import "../assets/variables.scss";
 .testimonialSect {
   width: 100%;
   padding: 2rem 0px;
@@ -142,6 +143,32 @@
         grid-row-start: 4;
         grid-row-end: 7;
         padding: 32px 24px;
+      }
+    }
+  }
+}
+@media #{$media-mobile} {
+  .testimonialSect {
+    .testimonialCon {
+      width: 100%;
+      .tsIntro {
+        width: 80%;
+      }
+      .tsGrid {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        height: auto;
+        .tsCard {
+          flex-direction: column-reverse;
+          .tsCarCon {
+            width: 60vw;
+            text-align: center;
+          }
+        }
+        .tsCard:nth-child(1) {
+          margin-left: 2rem;
+        }
       }
     }
   }

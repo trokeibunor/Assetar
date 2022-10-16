@@ -67,6 +67,7 @@ const message = ref("");
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/variables.scss";
 .contactSect {
   background-color: #035a85;
   color: #fff;
@@ -157,6 +158,29 @@ const message = ref("");
             background-color: #035a85;
             cursor: pointer;
           }
+        }
+      }
+    }
+  }
+}
+@media #{$media-mobile} {
+  .contactSect {
+    padding: 1.5rem 0px;
+    margin: 1.5rem 0px;
+    border-radius: 16px;
+    .csContent {
+      width: 90%;
+      .csIntro {
+        width: 90%;
+      }
+      .csCard {
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        img {
+          width: 40%;
         }
       }
     }

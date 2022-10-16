@@ -98,6 +98,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+@import "../assets/variables.scss";
 .tokenHolder {
   background-color: #035a85;
   color: #fff;
@@ -175,6 +176,32 @@
       gap: 4px;
       align-items: center;
       cursor: pointer;
+    }
+  }
+}
+@media #{$media-mobile} {
+  .tokenHolder {
+    border-radius: 16px;
+    .pattern_shape {
+      bottom: -20%;
+      right: -10%;
+    }
+    // width: 90%;
+    .tokenContent {
+      width: 90%;
+      .tkIntro {
+        width: 80%;
+      }
+      .tkGrid {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 8px;
+        .tokencard {
+          width: 90%;
+          margin: 1rem 0px;
+          padding: 4px;
+          justify-content: space-around;
+        }
+      }
     }
   }
 }

@@ -28,6 +28,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+@import "../assets/variables.scss";
 .frequently {
   margin: 2rem 0px;
   padding: 2rem 0px;
@@ -67,6 +68,21 @@
     .fqBox:hover {
       background-color: #5ec9ff;
       border: 1px solid #5ec9ff;
+    }
+  }
+}
+@media #{$media-mobile} {
+  .frequently {
+    width: 90%;
+    .fqIntro {
+      width: 80%;
+    }
+    .fqCon {
+      margin: 1rem auto;
+      width: 90%;
+      .fqBox {
+        padding: 8px 16px;
+      }
     }
   }
 }
