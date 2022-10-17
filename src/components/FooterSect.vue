@@ -47,6 +47,7 @@ function routeTo(x) {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/variables.scss";
 ul {
   list-style: none;
   margin: 0;
@@ -87,6 +88,7 @@ footer {
       }
     }
   }
+
   .copyRight {
     width: 100%;
     background-color: #065c86;
@@ -95,6 +97,14 @@ footer {
     padding: 2rem 0px;
     margin-top: 4rem;
     border-radius: 40px 40px 0px 0px;
+  }
+  @media #{$media-mobile} {
+    .list_row {
+      flex-direction: column;
+    }
+    .copyRight {
+      border-radius: 16px 16px 0px 0px;
+    }
   }
 }
 </style>

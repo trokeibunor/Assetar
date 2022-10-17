@@ -149,12 +149,13 @@ function routeTo(x) {
 
 <style lang="scss" scoped>
 // Main is inherited
+@import "../assets/variables.scss";
 .abHero {
   background-image: url(../assets/images/about_background.png);
   background-size: 100%;
   width: 100%;
   position: relative;
-  min-height: 85vh;
+  height: 85vh;
   color: #fff;
   .abIntro {
     position: relative;
@@ -174,6 +175,15 @@ function routeTo(x) {
     }
   }
 }
+@media #{$media-mobile} {
+  .abHero {
+    height: 65vh;
+    .abIntro {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
 .abHero:before {
   content: "";
   position: absolute;
@@ -184,6 +194,13 @@ function routeTo(x) {
   background: url(../assets/images/about_wave.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+@media #{$media-mobile} {
+  .abHero:before {
+    width: 100%;
+    height: 7.5em;
+    bottom: -10%;
+  }
 }
 .fromManagement {
   background-color: #fff;
@@ -211,6 +228,21 @@ function routeTo(x) {
     }
     p {
       line-height: 140%;
+    }
+  }
+  @media #{$media-mobile} {
+    display: flex;
+    flex-direction: column-reverse;
+    img {
+      width: 40%;
+    }
+    .fmText {
+      #top {
+        font-size: 14px;
+      }
+      h3 {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -265,6 +297,39 @@ function routeTo(x) {
       line-height: 140%;
     }
   }
+  @media #{$media-mobile} {
+    display: flex;
+    flex-direction: column;
+    .obTop {
+      width: 90%;
+      flex-direction: column;
+      align-items: flex-start;
+      div {
+        margin: 0px;
+        p {
+          margin: 16px 0px;
+        }
+      }
+    }
+    .brand_images {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 120%;
+      overflow-x: scroll;
+      img {
+        width: 70%;
+      }
+      img:nth-of-type(1) {
+        margin-left: 1rem;
+      }
+    }
+    .obTextSect {
+      h3 {
+        font-size: 24px;
+      }
+    }
+  }
 }
 .finalTalk {
   width: 80%;
@@ -284,6 +349,24 @@ function routeTo(x) {
     }
     p {
       line-height: 140%;
+    }
+  }
+  @media #{$media-mobile} {
+    background-color: #fff;
+    width: 90%;
+    border-radius: 16px;
+    padding: 1.5rem 0px;
+    margin: 1.5rem auto;
+    flex-direction: column-reverse;
+    img {
+      width: 40%;
+    }
+    .fiTalk {
+      width: 90%;
+      margin: auto;
+      h3 {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -345,6 +428,26 @@ function routeTo(x) {
         align-items: center;
         #titleSm {
           font-weight: 600;
+        }
+      }
+    }
+  }
+  @media #{$media-mobile} {
+    border-radius: 16px;
+    .pattern_shape {
+      bottom: -5%;
+      right: -10%;
+    }
+    #anTalk {
+      width: 80%;
+    }
+    .qualitiesCon {
+      .qualityGrid {
+        display: flex;
+        flex-direction: column;
+        .qualityBox {
+          width: 85%;
+          margin: auto;
         }
       }
     }

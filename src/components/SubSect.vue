@@ -11,6 +11,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+@import "../assets/variables.scss";
 .subToNews {
   background-color: #fff;
   display: flex;
@@ -50,6 +51,21 @@
       font-weight: 600;
       color: #fff;
       cursor: pointer;
+    }
+  }
+}
+@media #{$media-mobile} {
+  .subToNews {
+    width: 90%;
+    #title {
+      font-size: 18px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      button {
+        margin: 1rem 0px;
+      }
     }
   }
 }
