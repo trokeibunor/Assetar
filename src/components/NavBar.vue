@@ -7,14 +7,27 @@
       <a @click="routeTo('about')">Our Story</a>
       <a @click="routeTo('/#contact')" id="conBtn">Contact Us</a>
     </div>
+    <!-- Mobile toggler -->
+    <div class="navToggler">
+      <button v-show="isNavOpen" @click="isNavOpen = false">
+        <!-- <span class="material-symbols-outlined"> menu </span> -->
+        <img src="../assets/images/menu_hamburger.svg" alt="" srcset="" />
+      </button>
+      <button v-show="!isNavOpen" @click="isNavOpen = true">
+        <span class="material-symbols-outlined"> close </span>
+      </button>
+    </div>
   </nav>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import router from "../router";
 function routeTo(x) {
   router.push(x);
 }
+// toggler component
+const isNavOpen = ref(true);
 </script>
 
 <style lang="scss" scoped>
@@ -51,9 +64,12 @@ nav {
       color: #fff;
       width: fit-content;
       height: fit-content;
-      padding: 10px 24px;
+      padding: 8px 18px;
       border-radius: 8px;
     }
+  }
+  .navToggler {
+    display: none;
   }
 }
 // Mobile responsiveness
@@ -66,6 +82,13 @@ nav {
   nav {
     .navMenu {
       display: none;
+    }
+    .navToggler {
+      display: block;
+      button {
+        background-color: #ffffff00;
+        border: none;
+      }
     }
   }
 }
