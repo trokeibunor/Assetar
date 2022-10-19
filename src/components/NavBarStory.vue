@@ -25,7 +25,9 @@
     <div class="sidemenu" v-if="!isNavOpen">
       <a @click="(isNavOpen = false), routeTo('/')">Home</a>
       <a @click="(isNavOpen = false), routeTo('/#token')">Token</a>
-      <a @click="(isNavOpen = false), routeTo('about')">Our Story</a>
+      <a class="active" @click="(isNavOpen = false), routeTo('about')"
+        >Our Story</a
+      >
       <a @click="(isNavOpen = false), routeTo('/#contact')" id="conBtn"
         >Contact Us</a
       >
@@ -136,8 +138,15 @@ aside {
       right: 0;
       padding: 1rem 0px;
       a {
-        margin: 16px;
+        margin: 4px 4px;
+        padding: 16px;
         font-size: 18px;
+        font-weight: 600;
+      }
+      a.active {
+        border-left: 2px solid #035a85;
+        font-weight: 600;
+        background-color: #035a852a;
       }
     }
   }
