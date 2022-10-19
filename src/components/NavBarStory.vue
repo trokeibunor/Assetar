@@ -11,7 +11,7 @@
     <div class="navToggler">
       <button v-show="isNavOpen" @click="isNavOpen = false">
         <!-- <span class="material-symbols-outlined"> menu </span> -->
-        <img src="../assets/images/menu_hamburger.svg" alt="" srcset="" />
+        <img src="../assets/images/menu_hamburger_story.svg" alt="" srcset="" />
       </button>
       <button v-show="!isNavOpen" @click="isNavOpen = true">
         <!-- <span class="material-symbols-outlined"> close </span> -->
@@ -22,7 +22,7 @@
   <aside v-if="!isNavOpen">
     <!-- logo -->
     <!-- sideMenu -->
-    <div class="sidemenu">
+    <div class="sidemenu" v-if="!isNavOpen">
       <a @click="routeTo('/')">Home</a>
       <a @click="routeTo('/#token')">Token</a>
       <a @click="routeTo('about')">Our Story</a>
@@ -37,8 +37,9 @@ import router from "../router";
 // toggler component
 const isNavOpen = ref(true);
 function routeTo(x) {
-  router.push(x);
   this.isNavOpen = false;
+  console.log(isNavOpen);
+  router.push(x);
 }
 </script>
 

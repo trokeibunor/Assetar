@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="abHero">
-      <NavBar />
+      <NavBarStory />
       <div class="abIntro">
         <div class="abCon">
           <h2>Assetar's Story is unique</h2>
@@ -138,7 +138,7 @@
 </template>
 
 <script setup>
-import NavBar from "../components/NavBar.vue";
+import NavBarStory from "../components/NavBarStory.vue";
 import SubSect from "../components/SubSect.vue";
 import FooterSect from "../components/FooterSect.vue";
 import router from "../router";
