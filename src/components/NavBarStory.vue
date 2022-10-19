@@ -23,10 +23,12 @@
     <!-- logo -->
     <!-- sideMenu -->
     <div class="sidemenu" v-if="!isNavOpen">
-      <a @click="routeTo('/')">Home</a>
-      <a @click="routeTo('/#token')">Token</a>
-      <a @click="routeTo('about')">Our Story</a>
-      <a @click="routeTo('/#contact')" id="conBtn">Contact Us</a>
+      <a @click="(isNavOpen = false), routeTo('/')">Home</a>
+      <a @click="(isNavOpen = false), routeTo('/#token')">Token</a>
+      <a @click="(isNavOpen = false), routeTo('about')">Our Story</a>
+      <a @click="(isNavOpen = false), routeTo('/#contact')" id="conBtn"
+        >Contact Us</a
+      >
     </div>
   </aside>
 </template>

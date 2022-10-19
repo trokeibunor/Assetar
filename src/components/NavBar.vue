@@ -9,24 +9,26 @@
     </div>
     <!-- Mobile toggler -->
     <div class="navToggler">
-      <button v-show="isNavOpen" @click="isNavOpen = false">
+      <button v-show="isNavOpen == false" @click="isNavOpen = true">
         <!-- <span class="material-symbols-outlined"> menu </span> -->
         <img src="../assets/images/menu_hamburger.svg" alt="" srcset="" />
       </button>
-      <button v-show="!isNavOpen" @click="isNavOpen = true">
+      <button v-show="isNavOpen == true" @click="isNavOpen = false">
         <!-- <span class="material-symbols-outlined"> close </span> -->
         <img src="../assets/images/cancel_icon.svg" alt="" srcset="" />
       </button>
     </div>
   </nav>
-  <aside v-if="!isNavOpen">
+  <aside v-if="isNavOpen == true">
     <!-- logo -->
     <!-- sideMenu -->
-    <div class="sidemenu">
-      <a @click="routeTo('/')">Home</a>
-      <a @click="routeTo('/#token')">Token</a>
-      <a @click="routeTo('about')">Our Story</a>
-      <a @click="routeTo('/#contact')" id="conBtn">Contact Us</a>
+    <div class="sidemenu" v-if="isNavOpen == true">
+      <a @click="(isNavOpen = false), routeTo('/')">Home</a>
+      <a @click="(isNavOpen = false), routeTo('/#token')">Token</a>
+      <a @click="(isNavOpen = false), routeTo('about')">Our Story</a>
+      <a @click="(isNavOpen = false), routeTo('/#contact')" id="conBtn"
+        >Contact Us</a
+      >
     </div>
   </aside>
 </template>
@@ -35,10 +37,11 @@
 import { ref } from "vue";
 import router from "../router";
 // toggler component
-const isNavOpen = ref(true);
+const isNavOpen = ref(false);
 function routeTo(x) {
-  router.push(x);
   this.isNavOpen = false;
+  console.log(this.isNavOpen);
+  router.push(x);
 }
 </script>
 
