@@ -171,6 +171,7 @@ function routeTo(x) {
       img {
         width: 32px;
         cursor: pointer;
+        margin-top: 16px;
       }
     }
   }
@@ -178,9 +179,16 @@ function routeTo(x) {
 @media #{$media-mobile} {
   .abHero {
     height: 65vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     .abIntro {
       width: 80%;
       margin: 0 auto;
+      .abCon {
+        img {
+          width: 24px;
+        }
+      }
     }
   }
 }
@@ -206,7 +214,7 @@ function routeTo(x) {
   background-color: #fff;
   border-radius: 40px;
   width: 80%;
-  margin: 5rem auto 2rem;
+  margin: 1rem auto 2rem;
   padding: 32px;
   display: grid;
   grid-template-columns: 1fr 1fr;

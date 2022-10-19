@@ -38,7 +38,7 @@ import router from "../router";
 const isNavOpen = ref(true);
 function routeTo(x) {
   this.isNavOpen = false;
-  console.log(isNavOpen);
+  console.log(this.isNavOpen);
   router.push(x);
 }
 </script>
