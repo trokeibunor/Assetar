@@ -23,14 +23,10 @@
     <!-- logo -->
     <!-- sideMenu -->
     <div class="sidemenu" v-if="!isNavOpen">
-      <a @click="(isNavOpen = false), routeTo('/')">Home</a>
-      <a @click="(isNavOpen = false), routeTo('/#token')">Token</a>
-      <a class="active" @click="(isNavOpen = false), routeTo('about')"
-        >Our Story</a
-      >
-      <a @click="(isNavOpen = false), routeTo('/#contact')" id="conBtn"
-        >Contact Us</a
-      >
+      <a @click="routeTo('/')">Home</a>
+      <a @click="routeTo('/#token')">Token</a>
+      <a @click="routeTo('/#contact')" id="conBtn">Contact Us</a>
+      <a class="active" @click="routeTo('about')">Our Story</a>
     </div>
   </aside>
 </template>
@@ -41,8 +37,6 @@ import router from "../router";
 // toggler component
 const isNavOpen = ref(true);
 function routeTo(x) {
-  this.isNavOpen = false;
-  console.log(this.isNavOpen);
   router.push(x);
 }
 </script>
