@@ -77,7 +77,7 @@ nav {
       width: fit-content;
       height: fit-content;
       padding: 8px 18px;
-      border-radius: 8px;
+      border-radius: 4px;
     }
   }
   .navToggler {

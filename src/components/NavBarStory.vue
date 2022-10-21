@@ -76,7 +76,7 @@ nav {
       width: fit-content;
       height: fit-content;
       padding: 8px 18px;
-      border-radius: 8px;
+      border-radius: 4px;
     }
   }
   .navToggler {
@@ -134,7 +134,7 @@ aside {
       a {
         margin: 4px 4px;
         padding: 16px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
       }
       a.active {

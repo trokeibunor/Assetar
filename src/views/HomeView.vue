@@ -8,24 +8,44 @@ import FreqAsked from "../components/FreqAsked.vue";
 import ContactSect from "../components/ContactSect.vue";
 import SubSect from "../components/SubSect.vue";
 import FooterSect from "../components/FooterSect.vue";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+// design variables
+const alertOpen = ref(false);
 const subscribeEmail = ref("");
+const subcribeModal = ref(false);
+// Close modal fuction
+function clearModal() {
+  alertOpen.value = false;
+  console.log(alertOpen);
+}
+onMounted(() => {
+  // set timeout to open subscribe email modal
+  setTimeout(() => {
+    alertOpen.value = true;
+    subcribeModal.value = true;
+  }, 10000);
+});
 </script>
 <template>
-  <main>
-    <!-- SignUp modal -->
-    <div class="signUpModal" v-if="hasSubscribed">
-      <button @click="clearModal">
-        <img src="../assets/images/modal_remove_icon.svg" alt="" />
-      </button>
+  <!-- Pop up modals -->
+  <div class="alerts" v-if="alertOpen">
+    <div class="signUpModal" v-if="subcribeModal">
+      <img
+        id="clearIcon"
+        @click="clearModal"
+        src="../assets/images/modal_remove_icon.svg"
+        alt=""
+      />
       <h3>Subscribe To our Emailing List</h3>
       <input
         type="email"
         v-model="subscribeEmail"
         placeholder="Email Address"
       />
-      <button @click="submitEmail">Subscribe</button>
+      <button id="submit_btn" @click="submitEmail">Subscribe</button>
     </div>
+  </div>
+  <main>
     <NavBar />
     <section class="hero">
       <div class="heroContent">
@@ -60,17 +80,62 @@ $media-tablet: "only screen and (max-width : 768px)";
 $media-mobile: "only screen and (max-width : 600px)";
 $media-mobile-sm: "only screen and (max-width : 480px)";
 $media-desktop-strict: "only screen and (min-width: 768px)";
+// pop up styles
+.alerts {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  div {
+    background-color: #fff;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-radius: 4px;
+  }
+  .signUpModal {
+    #clearIcon {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      align-self: flex-end;
+      margin: 2rem 0px;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      // margin: 1rem 0px;
+    }
+    input {
+      padding: 16px 8px;
+      outline: none;
+      margin: 1.5rem 0px;
+    }
+    button#submit_btn {
+      width: fit-content;
+      height: fit-content;
+      background-color: #035a85;
+      align-self: center;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 12px 24px;
+      margin: 24px 0px;
+      outline: none;
+      border: none;
+      border-radius: 4px;
+    }
+  }
+}
 main {
   width: 100%;
   display: relative;
   overflow: hidden;
-  // Modals
-  .signUpModal {
-    display: flex;
-    width: 60%;
-    height: auto;
-    background: #fff;
-  }
 }
 // Hero Section
 .hero {
@@ -106,7 +171,7 @@ main {
       a#cta {
         text-decoration: none;
         padding: 12px 18px;
-        border-radius: 8px;
+        border-radius: 4px;
         font-weight: 700;
         background-color: #035a85;
         color: #fff;
