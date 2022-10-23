@@ -11,15 +11,35 @@
     <div class="fqCon">
       <div class="fqBox">
         <p id="fqTitle">How do I get started</p>
+        <p>
+          We leave room for criticism and applause of our service, after every
+          transaction we provide users, with the link to rate our service,
+          independently . Here is what they had to say
+        </p>
       </div>
       <div class="fqBox">
         <p id="fqTitle">How do I get started</p>
+        <p>
+          We leave room for criticism and applause of our service, after every
+          transaction we provide users, with the link to rate our service,
+          independently . Here is what they had to say
+        </p>
       </div>
       <div class="fqBox">
         <p id="fqTitle">How do I get started</p>
+        <p>
+          We leave room for criticism and applause of our service, after every
+          transaction we provide users, with the link to rate our service,
+          independently . Here is what they had to say
+        </p>
       </div>
       <div class="fqBox">
         <p id="fqTitle">How do I get started</p>
+        <p>
+          We leave room for criticism and applause of our service, after every
+          transaction we provide users, with the link to rate our service,
+          independently . Here is what they had to say
+        </p>
       </div>
     </div>
   </div>
@@ -64,10 +84,6 @@
         font-weight: 600;
         font-size: 16px;
       }
-    }
-    .fqBox:hover {
-      background-color: #5ec9ff;
-      border: 1px solid #5ec9ff;
     }
   }
 }

@@ -9,21 +9,21 @@
     </div>
     <!-- Mobile toggler -->
     <div class="navToggler">
-      <button v-show="isNavOpen == false" @click="isNavOpen = true">
+      <button v-show="isNavOpen" @click="isNavOpen = false">
         <!-- <span class="material-symbols-outlined"> menu </span> -->
         <img src="../assets/images/menu_hamburger.svg" alt="" srcset="" />
       </button>
-      <button v-show="isNavOpen == true" @click="isNavOpen = false">
+      <button v-show="!isNavOpen" @click="isNavOpen = true">
         <!-- <span class="material-symbols-outlined"> close </span> -->
         <img src="../assets/images/cancel_icon.svg" alt="" srcset="" />
       </button>
     </div>
   </nav>
-  <aside v-if="isNavOpen == true">
+  <aside v-if="!isNavOpen">
     <!-- logo -->
     <!-- sideMenu -->
-    <div class="sidemenu" v-if="isNavOpen == true">
-      <a class="active" @click="(isNavOpen = false), routeTo('/')">Home</a>
+    <div class="sidemenu" v-if="isNavOpen == false">
+      <a class="active" @click="routeTo('/')">Home</a>
       <a @click="routeTo('/#token')">Token</a>
       <a @click="routeTo('/#contact')" id="conBtn">Contact Us</a>
       <a @click="routeTo('about')">Our Story</a>
@@ -35,10 +35,10 @@
 import { ref } from "vue";
 import router from "../router";
 // toggler component
-const isNavOpen = ref(false);
+const isNavOpen = ref(true);
 function routeTo(x) {
-  this.isNavOpen = false;
   router.push(x);
+  isNavOpen.value = true;
 }
 </script>
 
@@ -131,11 +131,11 @@ aside {
       flex-direction: column;
       position: absolute;
       right: 0;
-      padding: 0.75rem 0px;
+      padding: 1rem 0px;
       a {
         margin: 4px 4px;
         padding: 16px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
       }
       a.active {
