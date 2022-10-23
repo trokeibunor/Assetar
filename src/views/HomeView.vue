@@ -97,6 +97,9 @@ $media-desktop-strict: "only screen and (min-width: 768px)";
     flex-direction: column;
     width: 40%;
     border-radius: 4px;
+    @media #{$media-mobile} {
+      width: 70%;
+    }
   }
   .signUpModal {
     #clearIcon {

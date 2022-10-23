@@ -9,33 +9,33 @@
       </p>
     </div>
     <div class="fqCon">
-      <div class="fqBox">
+      <div class="fqBox" id="firstQ" @click="firstQ = !firstQ">
         <p id="fqTitle">How do I get started</p>
-        <p>
+        <p v-if="firstQ">
           We leave room for criticism and applause of our service, after every
           transaction we provide users, with the link to rate our service,
           independently . Here is what they had to say
         </p>
       </div>
-      <div class="fqBox">
+      <div class="fqBox" id="secondQ" @click="secondQ = !secondQ">
         <p id="fqTitle">How do I get started</p>
-        <p>
+        <p v-if="secondQ">
           We leave room for criticism and applause of our service, after every
           transaction we provide users, with the link to rate our service,
           independently . Here is what they had to say
         </p>
       </div>
-      <div class="fqBox">
+      <div class="fqBox" id="thirdQ" @click="thirdQ = !thirdQ">
         <p id="fqTitle">How do I get started</p>
-        <p>
+        <p v-if="thirdQ">
           We leave room for criticism and applause of our service, after every
           transaction we provide users, with the link to rate our service,
           independently . Here is what they had to say
         </p>
       </div>
-      <div class="fqBox">
+      <div class="fqBox" id="fourthQ" @click="fourthQ = !fourthQ">
         <p id="fqTitle">How do I get started</p>
-        <p>
+        <p v-if="fourthQ">
           We leave room for criticism and applause of our service, after every
           transaction we provide users, with the link to rate our service,
           independently . Here is what they had to say
@@ -45,7 +45,14 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+// questions
+const firstQ = ref(false);
+const secondQ = ref(false);
+const thirdQ = ref(false);
+const fourthQ = ref(false);
+</script>
 
 <style lang="scss" scoped>
 @import "../assets/variables.scss";
