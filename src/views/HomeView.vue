@@ -46,8 +46,8 @@ onMounted(() => {
     </div>
   </div>
   <main>
-    <NavBar />
     <section class="hero">
+      <NavBar />
       <div class="heroContent">
         <div class="heroText">
           <h3>ASSETAR EXCHANGE</h3>
@@ -58,9 +58,9 @@ onMounted(() => {
           </p>
           <a href="#" id="cta">Trade with Us</a>
         </div>
-        <div class="heroImage">
+        <!-- <div class="heroImage">
           <img src="../assets/images/hero_image.png" alt="" />
-        </div>
+        </div> -->
       </div>
     </section>
     <QualityCon />
@@ -142,15 +142,25 @@ main {
 }
 // Hero Section
 .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/images/asseter-hero.png);
+  background-size: 100% 125%;
+  background-position: center;
+  height: 100dvh;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: flex-end;
   .heroContent {
     width: 90%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    height: 100%;
+    // flex-direction: row;
+    // align-items: center;
+    margin: 0 auto;
+    grid-template-columns: 50% 50%;
     align-items: center;
+    justify-items: center;
     .heroText {
       h3 {
         background: radial-gradient(
@@ -166,8 +176,10 @@ main {
       }
       h1 {
         margin: 1.5rem 0px;
+        color: #fff;
       }
       p {
+        color: #f2f2f2;
         width: 60%;
         margin-bottom: 2rem;
       }
@@ -197,11 +209,17 @@ main {
 }
 @media #{$media-mobile} {
   .hero {
+    background-size: 200% 100%;
     .heroContent {
-      flex-direction: column-reverse;
-      width: 80%;
+      display: flex;
+      // flex-direction: column-reverse;
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
+      height: 100%;
       margin: 0 auto;
       .heroText {
+        // height: 100%;
         h1 {
           font-size: 24px;
           font-weight: 700;
@@ -211,7 +229,8 @@ main {
         }
       }
       .heroImage {
-        height: 45vh;
+        // height: 45vh;
+        display: none;
         img {
           position: relative;
           width: 150%;

@@ -45,13 +45,15 @@ function routeTo(x) {
 <style lang="scss" scoped>
 @import "../assets/variables.scss";
 nav {
+  background-color: #fff;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  // width: 80%;
   margin: 0 auto;
-  padding: 1rem 0px;
+  padding: 0.75rem 0px;
   position: relative;
   z-index: 10;
   #logo {
@@ -90,7 +92,7 @@ aside {
 // Mobile responsiveness
 @media #{$media-tablet} {
   nav {
-    width: 90%;
+    width: 100%;
   }
 }
 @media #{$media-mobile} {
