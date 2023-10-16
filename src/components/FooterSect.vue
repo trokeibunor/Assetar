@@ -18,10 +18,10 @@
               />asseterexchange@gmail.com
             </a>
           </li>
-          <li>
+          <!-- <li>
             <img src="../assets/images/location_pin.svg" alt="" />
             One of those places you want to be at the end of a long day
-          </li>
+          </li> -->
         </ul>
       </div>
       <div class="ftlinks">

@@ -144,7 +144,7 @@ main {
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../assets/images/asseter-hero.png);
-  background-size: 100% 125%;
+  background-size: 100% 150%;
   background-position: center;
   height: 100dvh;
   width: 100%;
