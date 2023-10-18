@@ -1,22 +1,24 @@
 <template>
   <nav>
-    <img id="logo" src="../assets/images/logo.png" alt="logoImage" />
-    <div class="navMenu">
-      <a @click="routeTo('/')">Home</a>
-      <a @click="routeTo('/#token')">Token</a>
-      <a @click="routeTo('about')">Our Story</a>
-      <a @click="routeTo('/#contact')" id="conBtn">Contact Us</a>
-    </div>
-    <!-- Mobile toggler -->
-    <div class="navToggler">
-      <button v-show="isNavOpen" @click="isNavOpen = false">
-        <!-- <span class="material-symbols-outlined"> menu </span> -->
-        <img src="../assets/images/menu_hamburger.svg" alt="" srcset="" />
-      </button>
-      <button v-show="!isNavOpen" @click="isNavOpen = true">
-        <!-- <span class="material-symbols-outlined"> close </span> -->
-        <img src="../assets/images/cancel_icon.svg" alt="" srcset="" />
-      </button>
+    <div class="content">
+      <img id="logo" src="../assets/images/logo.png" alt="logoImage" />
+      <div class="navMenu">
+        <a @click="routeTo('/')">Home</a>
+        <a @click="routeTo('/#token')">Token</a>
+        <a @click="routeTo('about')">Our Story</a>
+        <a @click="routeTo('/#contact')" id="conBtn">Contact Us</a>
+      </div>
+      <!-- Mobile toggler -->
+      <div class="navToggler">
+        <button v-show="isNavOpen" @click="isNavOpen = false">
+          <!-- <span class="material-symbols-outlined"> menu </span> -->
+          <img src="../assets/images/menu_hamburger.svg" alt="" srcset="" />
+        </button>
+        <button v-show="!isNavOpen" @click="isNavOpen = true">
+          <!-- <span class="material-symbols-outlined"> close </span> -->
+          <img src="../assets/images/cancel_icon.svg" alt="" srcset="" />
+        </button>
+      </div>
     </div>
   </nav>
   <aside v-if="!isNavOpen">
@@ -47,43 +49,47 @@ function routeTo(x) {
 nav {
   background-color: #fff;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  // width: 80%;
-  margin: 0 auto;
-  padding: 0.75rem 0px;
-  position: relative;
-  z-index: 10;
-  #logo {
-    width: 48px;
-  }
-  .navMenu {
+  .content {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 18px;
-    a {
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 14px;
-      color: inherit;
+    // width: 80%;
+    margin: 0 auto;
+    padding: 0.75rem 0px;
+    position: relative;
+    z-index: 10;
+    #logo {
+      width: 48px;
     }
-    a:hover {
-      font-weight: 600;
+    .navMenu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 18px;
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 14px;
+        color: inherit;
+      }
+      a:hover {
+        font-weight: 600;
+      }
+      a#conBtn {
+        background-color: #035a85;
+        color: #fff;
+        width: fit-content;
+        height: fit-content;
+        padding: 8px 18px;
+        border-radius: 4px;
+      }
     }
-    a#conBtn {
-      background-color: #035a85;
-      color: #fff;
-      width: fit-content;
-      height: fit-content;
-      padding: 8px 18px;
-      border-radius: 4px;
+    .navToggler {
+      display: none;
     }
-  }
-  .navToggler {
-    display: none;
   }
 }
 aside {
@@ -100,14 +106,16 @@ aside {
     position: sticky;
     z-index: 10;
     top: 0;
-    .navMenu {
-      display: none;
-    }
-    .navToggler {
-      display: block;
-      button {
-        background-color: #ffffff00;
-        border: none;
+    .content {
+      .navMenu {
+        display: none;
+      }
+      .navToggler {
+        display: block;
+        button {
+          background-color: #ffffff00;
+          border: none;
+        }
       }
     }
   }

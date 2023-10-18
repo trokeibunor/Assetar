@@ -11,7 +11,7 @@
           Nisl eu pellentesque sit consequat mi, non euismod habitasse eleifend.
         </p>
       </div>
-      <img src="../assets/images/topCardImg.png" alt="" />
+      <img src="../assets/images/card_images.png" alt="" />
     </div>
     <div class="convincerCard" id="second">
       <div class="convincerText">
@@ -24,39 +24,32 @@
           Nisl eu pellentesque sit consequat mi, non euismod habitasse eleifend.
         </p>
       </div>
-      <img src="../assets/images/downCardImg.png" alt="" />
+      <img src="../assets/images/cards_image_two.png" alt="" />
     </div>
-    <a @click="routeTo('/#contact')">Contact Us</a>
   </div>
 </template>
 
-<script setup>
-import router from "../router";
-function routeTo(x) {
-  router.push(x);
-}
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 @import "../assets/variables.scss";
 .convincerComp {
   width: 100%;
   background-color: #f6fafc;
-  padding: 3rem 0px;
+  padding: 2rem 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   .convincerCard {
-    width: 70%;
-    margin: 4rem auto;
+    width: 80%;
+    margin: 1.5rem auto;
     display: flex;
     align-items: center;
     flex-direction: row;
-    border-radius: 20px;
-    background-color: #fff;
     padding: 16px;
-    gap: 32px;
+    gap: 1.5rem;
     .convincerText {
+      width: 50%;
       h3 {
         color: #035a85;
       }
@@ -67,29 +60,21 @@ function routeTo(x) {
         line-height: 140%;
       }
     }
+    img {
+      width: 50%;
+    }
   }
   #second {
     flex-direction: row-reverse;
-  }
-  a {
-    background-color: #035a85;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    border-radius: 8px;
-    border: 1px solid #fff;
-    outline: none;
-    width: fit-content;
-    height: fit-content;
-    padding: 16px 40px;
-    align-self: center;
-    cursor: pointer;
   }
 }
 @media #{$media-mobile} {
   .convincerComp {
     .convincerCard,
     #second {
+      .convincerText {
+        width: 100%;
+      }
       margin: 1.5rem auto;
       width: 80%;
       flex-direction: column-reverse;

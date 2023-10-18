@@ -175,7 +175,7 @@ main {
         text-fill-color: transparent;
       }
       h1 {
-        margin: 1.5rem 0px;
+        margin: 1rem 0px;
         color: #fff;
       }
       p {

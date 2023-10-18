@@ -95,10 +95,11 @@
       height: 90vh;
       .tsCard {
         background-color: #fff;
-        border-radius: 8px;
+        border-radius: 4px;
         display: flex;
         align-items: center;
         justify-content: center;
+        box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
         img {
           width: 64px;
           height: 64px;
