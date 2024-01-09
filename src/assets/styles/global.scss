@@ -1,1 +1,41 @@
-@import "./partials/fonts";
+@import "partials/_fonts";
+// global font style
+
+body {
+  font-family: Satoshi;
+  background-color: #fff !important;
+}
+p,
+button {
+  font-family: "Satoshi";
+}
+button {
+  cursor: pointer;
+}
+.main-button {
+  display: flex;
+  padding: var(--small, 1rem) 2.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  color: var(--White-1, #fff);
+  border-radius: 0.75rem;
+  background: #0471a6;
+  outline: none;
+  font-weight: 700;
+}
+.outline-button {
+  display: flex;
+  padding: var(--small, 1rem) 2.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #0471a6;
+  background-color: #fff;
+  color: #0471a6;
+  font-size: 1rem;
+  font-weight: 700;
+}

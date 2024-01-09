@@ -6,7 +6,7 @@
     <div class="nav-content">
       <div class="logo">
         <img src="../assets/images//logo.png" alt="" />
-        <p>Asseter</p>
+        <h4>Asseter</h4>
       </div>
       <div class="nav-list">
         <p>About Us</p>
@@ -43,6 +43,8 @@ nav {
     height: fit-content;
     display: flex;
     justify-content: space-between;
+    // position: relative;
+    // z-index: 10;
     .logo,
     .nav-list,
     .buttons {
@@ -50,16 +52,29 @@ nav {
       align-items: center;
     }
     .logo {
-      gap: 4px;
+      gap: 0px;
       img {
         width: 48px;
         height: 48px;
       }
+      h4 {
+        font-family: "Clash Display";
+      }
     }
     .nav-list,
     .buttons {
-      gap: 8px;
+      gap: 12px;
       p {
+        cursor: pointer;
+        font-weight: 600;
+      }
+      button {
+        border-radius: 0.5rem;
+        background: #0471a6;
+        outline: none;
+        color: #fff;
+        padding: 12px 16px;
+        border: none;
         cursor: pointer;
       }
     }
