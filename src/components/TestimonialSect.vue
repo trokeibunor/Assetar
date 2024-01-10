@@ -1,174 +1,161 @@
 <template>
-  <div class="testimonialSect">
-    <div class="testimonialCon">
-      <div class="tsIntro">
-        <h3>Hear from our clients</h3>
+  <section>
+    <div class="content">
+      <div class="intro">
+        <h2>Our Customers Reviews</h2>
         <p>
-          We leave room for criticism and applause of our service, after every
-          transaction we provide users, with the link to rate our service,
-          independently . Here is what they had to say
+          Join the thousands of people already on the exchange today. <br />Hear
+          from our clients
         </p>
       </div>
-      <div class="tsGrid">
-        <div class="tsCard">
-          <img src="../assets/images/tsImgOne.png" alt="" />
-          <div class="tsCarCon">
-            <p id="TCCtitle">Treasure</p>
-            <p>
-              “ I really enjoyed trading with this exchange, it was very fast
-              and reliable “
+      <div class="testimonialCarousel">
+        <div class="testimonial">
+          <div class="content">
+            <p class="word">
+              Assetar is the best I've been with no cap, quick exchange and
+              deals are always done the way it should be ngl
             </p>
+            <div class="btm">
+              <div class="author">
+                <div class="name">Azagba Osagie Destiny</div>
+                <img src="../assets/images/svg/stars.svg" alt="" />
+              </div>
+              <img src="../assets/images/png/inverted-comma.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="tsCard">
-          <img src="../assets/images/tsImgTwo.png" alt="" />
-          <div class="tsCarCon">
-            <p id="TCCtitle">Treasure</p>
-            <p>
-              “ I really enjoyed trading with this exchange, it was very fast
-              and reliable “
+        <div class="testimonial">
+          <div class="content">
+            <p class="word">
+              If the scale is on 100, Assetar broke the scale. I thought I had a
+              good exchange service till I started trading with Assetar. They’re
+              simply top notch, I recommend
             </p>
+            <div class="btm">
+              <div class="author">
+                <div class="name">Rahman Pablo</div>
+                <img src="../assets/images/svg/stars.svg" alt="" />
+              </div>
+              <img src="../assets/images/png/inverted-comma.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="tsCard">
-          <img src="../assets/images/tsImgThree.png" alt="" />
-          <div class="tsCarCon">
-            <p id="TCCtitle">Treasure</p>
-            <p>
-              “ I really enjoyed trading with this exchange, it was very fast
-              and reliable “
+        <div class="testimonial">
+          <div class="content">
+            <p class="word">
+              I have been trading with Asseter for almost a year now and it’s
+              been a really great experience so far. For me meeting up to time
+              and delivery early is important and that’s what I’ve experienced
+              with Assetar so far.
             </p>
+            <div class="btm">
+              <div class="author">
+                <div class="name">Omoregie Osayande Alvan</div>
+                <img src="../assets/images/svg/stars.svg" alt="" />
+              </div>
+              <img src="../assets/images/png/inverted-comma.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="tsCard">
-          <img src="../assets/images/tsImgFour.png" alt="" />
-          <div class="tsCarCon">
-            <p id="TCCtitle">Treasure</p>
-            <p>
-              “ I really enjoyed trading with this exchange, it was very fast
-              and reliable “
+        <div class="testimonial">
+          <div class="content">
+            <p class="word">
+              The only place where I don’t ever feel worried about trading
+              anything. I’d exchange my kidneys here if Assetar starts buying
+              kidneys❤️
             </p>
+            <div class="btm">
+              <div class="author">
+                <div class="name">Ohunma Azike</div>
+                <img src="../assets/images/svg/stars.svg" alt="" />
+              </div>
+              <img src="../assets/images/png/inverted-comma.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="tsCard">
-          <img src="../assets/images/tsImgFive.png" alt="" />
-          <div class="tsCarCon">
-            <p id="TCCtitle">Treasure</p>
-            <p>
-              “ I really enjoyed trading with this exchange, it was very fast
-              and reliable “
+        <div class="testimonial">
+          <div class="content">
+            <p class="word">
+              The team of Assetar is truly brilliant and well-versed in the
+              crypto space. Furthermore their customer service is attentive,
+              responsive and fast. I never had to wait over 5mins before
+              receiving a reply.
             </p>
+            <div class="btm">
+              <div class="author">
+                <div class="name">Osagie</div>
+                <img src="../assets/images/svg/stars.svg" alt="" />
+              </div>
+              <img src="../assets/images/png/inverted-comma.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup></script>
 
 <style lang="scss" scoped>
-@import "../assets/variables.scss";
-.testimonialSect {
-  width: 100%;
-  padding: 2rem 0px;
-  .testimonialCon {
-    width: 80%;
+section {
+  background: var(--Grey-0, #050410);
+  padding: 4rem 0px;
+  color: #fff;
+  .content {
+    width: 90%;
     margin: 0 auto;
-    .tsIntro {
-      width: 50%;
-      margin: 0px auto;
+    .intro {
       text-align: center;
-      h3 {
-        font-size: 24px;
+
+      h2 {
+        font-size: 1.5rem;
+        font-family: "Clash Display";
+      }
+      .subheader {
+        font-family: Satoshi;
+        color: #fff;
         font-weight: 600;
       }
     }
-    .tsGrid {
-      padding: 1rem 0px;
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      column-gap: 8px;
-      row-gap: 12px;
+    .testimonialCarousel {
       width: 100%;
-      height: 90vh;
-      .tsCard {
-        background-color: #fff;
-        border-radius: 4px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
-        img {
-          width: 64px;
-          height: 64px;
-        }
-        gap: 8px;
-        .tsCarCon {
-          #TCCtitle {
-            color: #065c86;
+      display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      margin-top: 2rem;
+      gap: 1.5rem;
+      &::-webkit-scrollbar {
+        height: 0px;
+      }
+      .testimonial {
+        border-radius: var(--small, 1rem);
+        background: var(--Grey-1, #2e2f35);
+        // width: fit-content;
+        height: 15rem;
+        min-width: 30rem;
+        max-width: 30rem;
+        padding: 1rem 0px;
+        .content {
+          height: 100%;
+          width: 90%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          p {
+            font-family: "Satoshi";
+            line-height: 130%;
+            font-family: Satoshi;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 500;
           }
-        }
-      }
-      // Iterations
-      .tsCard:nth-child(1) {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        padding: 32px 24px;
-      }
-      .tsCard:nth-child(2) {
-        grid-column-start: 5;
-        grid-column-end: 8;
-        grid-row-start: 2;
-        padding: 12px 16px;
-      }
-      .tsCard:nth-child(3) {
-        grid-column-start: 2;
-        grid-column-end: 6;
-        grid-row-start: 3;
-        padding: 12px 16px;
-      }
-      .tsCard:nth-child(4) {
-        grid-column-start: 6;
-        grid-column-end: 8;
-        grid-row-start: 3;
-        grid-row-end: 5;
-        padding: 32px 24px;
-      }
-      .tsCard:nth-child(5) {
-        grid-column-start: 4;
-        grid-column-end: 6;
-        grid-row-start: 4;
-        grid-row-end: 7;
-        padding: 32px 24px;
-      }
-    }
-  }
-}
-@media #{$media-mobile} {
-  .testimonialSect {
-    .testimonialCon {
-      width: 100%;
-      .tsIntro {
-        width: 80%;
-      }
-      .tsGrid {
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-        height: auto;
-        .tsCard {
-          flex-direction: column-reverse;
-          .tsCarCon {
-            width: 60vw;
-            text-align: center;
+          .btm {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
           }
-        }
-        .tsCard:nth-child(1) {
-          margin-left: 2rem;
         }
       }
     }
