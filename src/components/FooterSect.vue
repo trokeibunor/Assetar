@@ -2,20 +2,21 @@
   <footer>
     <div class="list_row">
       <div class="ftContact">
-        <h5>Contact</h5>
+        <h5>Contact Us</h5>
         <ul>
           <li>
-            <a href="tel:+"
-              ><img src="../assets/images/phone_icon.svg" alt="" /> +234
-              9015379412</a
+            <a href="tel:+">
+              <!-- <img src="../assets/images/phone_icon.svg" alt="" /> -->
+              +234 9015379412</a
             >
           </li>
           <li>
             <a href="mailto:">
-              <img
+              <!-- <img
                 src="../assets/images/mail_ftIcon.svg"
                 alt=""
-              />asseterexchange@gmail.com
+              /> -->
+              asseterexchange@gmail.com
             </a>
           </li>
           <!-- <li>
@@ -47,7 +48,7 @@ function routeTo(x) {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/variables.scss";
+// @import "../assets/variables.scss";
 ul {
   list-style: none;
   margin: 0;
@@ -65,6 +66,7 @@ footer {
       h5 {
         font-size: 18px;
         font-weight: bold;
+        font-family: "Clash Display";
       }
       ul {
         img {
@@ -75,11 +77,12 @@ footer {
           display: flex;
           gap: 8px;
           align-items: center;
+          font-weight: 600;
           //   justify-content: center;
           cursor: pointer;
           a {
             text-decoration: none;
-            color: #000;
+            color: var(--Grey-3, #7d7e7f);
           }
         }
         li {
@@ -91,12 +94,13 @@ footer {
 
   .copyRight {
     width: 100%;
-    background-color: #065c86;
+    background-image: url(../assets/images/top-info.png);
     text-align: center;
     color: #fff;
     padding: 2rem 0px;
     margin-top: 4rem;
-    border-radius: 40px 40px 0px 0px;
+    // border-radius: 40px 40px 0px 0px;
+    font-family: "Clash Display";
   }
   @media #{$media-mobile} {
     .list_row {

@@ -4,6 +4,7 @@ import socialProof from "../components/socialProof.vue";
 import ourOffers from "../components/ourOffers.vue";
 import ourServices from "../components/ourServices.vue";
 import TestimonialSect from "../components/TestimonialSect.vue";
+import FooterSect from "../components/FooterSect.vue";
 // import { ref, onMounted } from "vue";
 </script>
 <template>
@@ -68,6 +69,7 @@ import TestimonialSect from "../components/TestimonialSect.vue";
         </div>
       </div>
     </section>
+    <FooterSect />
   </main>
 </template>
 <style lang="scss">
