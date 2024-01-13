@@ -1,0 +1,74 @@
+<script setup>
+import NavBar from "../components/NavBar.vue";
+import FooterSect from "../components/FooterSect.vue";
+import faqSect from "../components/faqSect.vue";
+</script>
+<template>
+  <NavBar />
+  <main>
+    <section class="hero">
+      <div class="text-section">
+        <div class="content">
+          <h5>Assetar's One-of-a-kind Story</h5>
+          <h2 class="intro-text">
+            Africa's Fastest and Easiest Cryptocurrency Exchange
+          </h2>
+          <div class="button-row">
+            <button class="main-button">Trade with Us</button>
+            <button class="outline-button">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <faqSect />
+    <section class="btm-talk">
+      <div class="content">
+        <div id="cont">
+          <div class="text-sect">
+            <h3>Let’s Secure your Future with</h3>
+            <h3 id="second">
+              Our Service
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
+                fill="none"
+              >
+                <path
+                  d="M27 0C29.5892 13.6971 40.3029 24.4108 54 27C40.3029 29.5892 29.5892 40.3029 27 54C24.4108 40.3029 13.6971 29.5892 0 27C13.6971 24.4108 24.4108 13.6971 27 0Z"
+                  fill="#0471A6"
+                />
+              </svg>
+            </h3>
+          </div>
+          <div class="btn-hold">
+            <button>Get Started</button>
+            <p>
+              Join thousands of other folks to have the best trading experience
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <FooterSect />
+  </main>
+</template>
+
+<style lang="scss" scoped>
+section.hero {
+  background: var(--Grey-bglast, #f9fbfc);
+  .text-section {
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      h5 {
+        padding: 0;
+        margin: 0;
+        color: #0471a6;
+      }
+    }
+  }
+}
+</style>

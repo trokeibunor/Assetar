@@ -38,7 +38,7 @@ import FooterSect from "../components/FooterSect.vue";
     <socialProof />
     <ourOffers />
     <ourServices />
-    <TestimonialSect />
+    <TestimonialSect id="testimonial" />
     <section class="btm-talk">
       <div class="content">
         <div id="cont">

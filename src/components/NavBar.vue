@@ -4,13 +4,13 @@
       <p>Trade your coins and tokens crazy speed</p>
     </div>
     <div class="nav-content">
-      <div class="logo">
+      <div class="logo" @click="$router.push('/')">
         <img src="../assets/images//logo.png" alt="" />
         <h4>Asseter</h4>
       </div>
       <div class="nav-list">
-        <p>About Us</p>
-        <p>Testimonials</p>
+        <p @click="$router.push('/about')">About Us</p>
+        <p @click="$router.push('/#testimonial')">Testimonials</p>
         <p>Contact us</p>
       </div>
       <div class="buttons">
@@ -53,6 +53,7 @@ nav {
     }
     .logo {
       gap: 0px;
+      cursor: pointer;
       img {
         width: 48px;
         height: 48px;
