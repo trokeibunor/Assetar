@@ -18,50 +18,52 @@
         <div class="faq-list">
           <div class="faq">
             <div class="cont-row">
-              <p>How do I earn from buying a property</p>
+              <p>How does Assetar Exchange work?</p>
               <span>&#43;</span>
             </div>
             <p class="faq-content">
-              You can earn in a number of ways, your property definitely
-              appreciates in value over time and can be source of income. You
-              can also access the referral system where your downline/referral’s
-              transactions gives your commissions on the platform.
+              Buying and selling cryptocurrencies on Assetar enables you to
+              convert your cryptocurrencies into Naira. Digital assets' prices,
+              including those of coins and tokens, are set based on our hourly
+              trading activities. It is significant to note that based on our
+              buy and sell activities, our cryptocurrency prices differ from
+              those offered by other cryptocurrency exchanges in the market
+              (order).
             </p>
           </div>
           <div class="faq">
             <div class="cont-row">
-              <p>How do I earn from buying a property</p>
+              <p>What is a crypto exchange vs wallet?</p>
               <span>&#43;</span>
             </div>
             <p class="faq-content">
-              You can earn in a number of ways, your property definitely
-              appreciates in value over time and can be source of income. You
-              can also access the referral system where your downline/referral’s
-              transactions gives your commissions on the platform.
+              A wallet is used for holding your own coins, whereas an exchange
+              like Assetar allows you to buy and sell coins at market value.
+              This is the key distinction between a cryptocurrency exchange and
+              a wallet.
             </p>
           </div>
           <div class="faq">
             <div class="cont-row">
-              <p>How do I earn from buying a property</p>
+              <p>What is the cheapest cryptocurrency?</p>
               <span>&#43;</span>
             </div>
             <p class="faq-content">
-              You can earn in a number of ways, your property definitely
-              appreciates in value over time and can be source of income. You
-              can also access the referral system where your downline/referral’s
-              transactions gives your commissions on the platform.
+              Since the debut of the first cryptocurrency, the market for
+              cryptocurrencies has expanded dramatically. Here are the top 10
+              most affordable cryptocurrencies with promising futures that our
+              analysts have been monitoring: USD Coin, XRP, Cardano, Dogecoin,
+              Shiba Inu, Tether, Dai, Algorand, Stellar, and Decentraland.
             </p>
           </div>
           <div class="faq">
             <div class="cont-row">
-              <p>How do I earn from buying a property</p>
+              <p>How long does a transaction with Assetar Exchange take?</p>
               <span>&#43;</span>
             </div>
             <p class="faq-content">
-              You can earn in a number of ways, your property definitely
-              appreciates in value over time and can be source of income. You
-              can also access the referral system where your downline/referral’s
-              transactions gives your commissions on the platform.
+              All our transactions are usually completed under 5 minutes except
+              in rare cases of bank failures or blockchain related delays
             </p>
           </div>
         </div>
