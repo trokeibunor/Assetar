@@ -159,6 +159,7 @@ main {
     @media #{$media-mobile} {
       flex-direction: column-reverse;
       height: auto;
+      margin: 1rem 0px 2rem;
       .text-section,
       .image-section {
         width: 100%;
@@ -229,6 +230,25 @@ main {
           }
           p {
             width: 10rem;
+          }
+        }
+      }
+    }
+    @media #{$media-mobile} {
+      .content {
+        #cont {
+          width: 90%;
+          flex-direction: column;
+          gap: 1.5rem;
+          .text-sect {
+            h3 {
+              font-size: 2rem;
+            }
+          }
+          .btn-hold {
+            p {
+              width: 80%;
+            }
           }
         }
       }

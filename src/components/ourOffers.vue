@@ -61,120 +61,7 @@
   </section>
 </template>
 
-<script>
-import { ref } from "vue";
-export default {
-  setup() {
-    /*--------------------
-    Vars
-    --------------------*/
-    let progress = ref(50);
-    let startX = ref(0);
-    let active = ref(0);
-    let isDown = ref(false);
-
-    /*--------------------
-    Constants
-    --------------------*/
-    const speedWheel = 0.02;
-    const speedDrag = -0.1;
-
-    /*--------------------
-    Get Z
-    --------------------*/
-    const getZindex = (array, index) =>
-      array.map((_, i) =>
-        index === i ? array.length : array.length - Math.abs(index - i)
-      );
-
-    /*--------------------
-    Items
-    --------------------*/
-    const items = ref(document.querySelectorAll(".carousel-item"));
-    const cursors = ref(document.querySelectorAll(".cursor"));
-
-    const displayItems = (item, index, active) => {
-      const zIndex = getZindex([...items.value], active)[index];
-      item.style.setProperty("--zIndex", zIndex);
-      item.style.setProperty("--active", (index - active) / items.value.length);
-    };
-
-    /*--------------------
-    Animate
-    --------------------*/
-    const animate = () => {
-      progress.value = Math.max(0, Math.min(progress.value, 100));
-      active.value = Math.floor(
-        (progress.value / 100) * (items.value.length - 1)
-      );
-
-      items.value.forEach((item, index) =>
-        displayItems(item, index, active.value)
-      );
-    };
-    animate();
-
-    /*--------------------
-    Click on Items
-    --------------------*/
-    items.value.forEach((item, i) => {
-      item.addEventListener("click", () => {
-        progress.value = (i / items.value.length) * 100 + 10;
-        animate();
-      });
-    });
-
-    /*--------------------
-    Handlers
-    --------------------*/
-    const handleWheel = (e) => {
-      const wheelProgress = e.deltaY * speedWheel;
-      progress.value = progress.value + wheelProgress;
-      animate();
-    };
-
-    const handleMouseMove = (e) => {
-      if (e.type === "mousemove") {
-        cursors.value.forEach(($cursor) => {
-          $cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-        });
-      }
-      if (!isDown.value) return;
-      const x = e.clientX || (e.touches && e.touches[0].clientX) || 0;
-      const mouseProgress = (x - startX.value) * speedDrag;
-      progress.value = progress.value + mouseProgress;
-      startX.value = x;
-      animate();
-    };
-
-    const handleMouseDown = (e) => {
-      isDown.value = true;
-      startX.value = e.clientX || (e.touches && e.touches[0].clientX) || 0;
-    };
-
-    const handleMouseUp = () => {
-      isDown.value = false;
-    };
-
-    /*--------------------
-    Listeners
-    --------------------*/
-    document.addEventListener("mousewheel", handleWheel);
-    document.addEventListener("mousedown", handleMouseDown);
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseup", handleMouseUp);
-    document.addEventListener("touchstart", handleMouseDown);
-    document.addEventListener("touchmove", handleMouseMove);
-    document.addEventListener("touchend", handleMouseUp);
-
-    // Return any variables or methods that you want to expose
-    return {
-      items,
-      cursors,
-    };
-  },
-};
-</script>
+<script></script>
 
 <style lang="scss" scoped>
 section {
@@ -239,6 +126,17 @@ section {
             font-weight: 900;
             // font-family: "Clash Display";
           }
+        }
+      }
+    }
+  }
+  @media #{$media-mobile} {
+    .content {
+      .offer-grid {
+        position: relative;
+        overflow-x: scroll;
+        .grid-item {
+          min-width: 90%;
         }
       }
     }

@@ -127,5 +127,19 @@ section {
       }
     }
   }
+  @media #{$media-mobile} {
+    .content {
+      .intro {
+        text-align: left;
+        br {
+          display: none;
+        }
+      }
+      .service-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+    }
+  }
 }
 </style>

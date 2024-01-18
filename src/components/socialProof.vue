@@ -38,5 +38,12 @@ section {
     aspect-ratio: 16/4;
     object-fit: contain;
   }
+  @media #{$media-mobile} {
+    .image-row {
+      width: 100%;
+      position: relative;
+      overflow: scroll;
+    }
+  }
 }
 </style>
