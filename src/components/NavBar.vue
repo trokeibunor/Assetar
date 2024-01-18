@@ -80,5 +80,13 @@ nav {
       }
     }
   }
+  @media #{$media-mobile} {
+    .nav-content {
+      .nav-list,
+      .buttons {
+        display: none;
+      }
+    }
+  }
 }
 </style>

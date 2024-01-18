@@ -89,6 +89,7 @@ main {
     width: 100%;
     height: 80vh;
     align-items: center;
+
     .text-section,
     .image-section {
       width: 50%;
@@ -155,6 +156,34 @@ main {
         gap: 1rem;
       }
     }
+    @media #{$media-mobile} {
+      flex-direction: column-reverse;
+      height: auto;
+      .text-section,
+      .image-section {
+        width: 100%;
+      }
+      .text-section {
+        .content {
+          width: 90%;
+        }
+        .notif {
+          p {
+            font-size: 12px;
+          }
+        }
+        .intro-text {
+          margin-top: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          font-size: 1.75rem;
+        }
+        .sub-text {
+          font-size: 0.8rem;
+        }
+      }
+    }
   }
 
   .btm-talk {
@@ -205,9 +234,5 @@ main {
       }
     }
   }
-}
-
-// Hero Section
-@media #{$media-mobile} {
 }
 </style>
