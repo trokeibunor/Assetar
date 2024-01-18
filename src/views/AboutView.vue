@@ -58,7 +58,7 @@ import faqSect from "../components/faqSect.vue";
 <style lang="scss" scoped>
 section.hero {
   background: var(--Grey-bglast, #f9fbfc);
-  padding: 1.5rem 0px;
+  padding: 1rem 0px;
   .text-section {
     .content {
       display: flex;

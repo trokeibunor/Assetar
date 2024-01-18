@@ -163,6 +163,7 @@
   }
   @media #{$media-mobile} {
     .content {
+      gap: 1rem;
       flex-direction: column;
       .left,
       .right {
