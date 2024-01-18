@@ -161,5 +161,29 @@
       }
     }
   }
+  @media #{$media-mobile} {
+    .content {
+      flex-direction: column;
+      .left,
+      .right {
+        width: 100%;
+      }
+      .left {
+        .head {
+          font-size: 2rem;
+          br {
+            display: none;
+          }
+        }
+      }
+      .right {
+        .faq-list {
+          .faq {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
 }
 </style>
