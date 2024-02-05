@@ -17,14 +17,37 @@
         <p>Socials</p>
         <button>Get Started</button>
       </div>
+      <button
+        class="hamburger hamburger--spring"
+        :class="isActive ? 'is-active' : ''"
+        @click="isActive = !isActive"
+        type="button"
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <!-- mobile dropdown -->
+    <div class="mobile-dropdown" v-if="isActive == true">
+      <div class="mb-nav-list">
+        <p class="active" @click="$router.push('/about')">Home</p>
+        <p @click="$router.push('/about')">About Us</p>
+        <p @click="$router.push('/#testimonial')">Testimonials</p>
+        <p @click="$router.push('/about')">Socials</p>
+      </div>
     </div>
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+const isActive = ref(false);
+</script>
 
 <style lang="scss" scoped>
 nav {
+  position: relative;
   width: 100%;
   height: auto;
   .top-info {
@@ -79,12 +102,44 @@ nav {
         cursor: pointer;
       }
     }
+    .hamburger {
+      display: none;
+    }
+  }
+  .mobile-dropdown {
+    display: none;
   }
   @media #{$media-mobile} {
     .nav-content {
       .nav-list,
       .buttons {
         display: none;
+      }
+    }
+    .hamburger {
+      display: block !important;
+      background-color: white;
+    }
+    .mobile-dropdown {
+      background: white;
+      width: 100%;
+      display: block;
+      position: absolute;
+      z-index: 10;
+      .mb-nav-list {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          border-bottom: 2px solid #ffffff;
+          padding-bottom: 4px;
+          &.active {
+            border-bottom: 2px solid #0471a6;
+          }
+        }
       }
     }
   }

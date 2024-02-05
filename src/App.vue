@@ -6,7 +6,7 @@ import { RouterView } from "vue-router";
   <RouterView />
 </template>
 
-<style>
+<style lang="scss">
 .material-symbols-rounded {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
