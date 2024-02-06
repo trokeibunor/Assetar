@@ -31,10 +31,46 @@
     <!-- mobile dropdown -->
     <div class="mobile-dropdown" v-if="isActive == true">
       <div class="mb-nav-list">
-        <p class="active" @click="$router.push('/about')">Home</p>
-        <p @click="$router.push('/about')">About Us</p>
-        <p @click="$router.push('/#testimonial')">Testimonials</p>
-        <p @click="$router.push('/about')">Socials</p>
+        <p
+          :class="activeLink == 'home' ? 'active' : ''"
+          @click="
+            $router.push('/');
+            isActive = false;
+            activeLink = 'home';
+          "
+        >
+          Home
+        </p>
+        <p
+          :class="activeLink == 'about' ? 'active' : ''"
+          @click="
+            $router.push('/about');
+            isActive = false;
+            activeLink = 'about';
+          "
+        >
+          About Us
+        </p>
+        <p
+          :class="activeLink == 'testimonial' ? 'active' : ''"
+          @click="
+            $router.push('/#testimonial');
+            isActive = false;
+            activeLink = 'testimonial';
+          "
+        >
+          Testimonials
+        </p>
+        <p
+          :class="activeLink == 'social' ? 'active' : ''"
+          @click="
+            $router.push('/#footer');
+            isActive = false;
+            activeLink = 'social';
+          "
+        >
+          Socials
+        </p>
       </div>
     </div>
   </nav>
@@ -43,6 +79,7 @@
 <script setup>
 import { ref } from "vue";
 const isActive = ref(false);
+const activeLink = ref("");
 </script>
 
 <style lang="scss" scoped>
@@ -137,6 +174,9 @@ nav {
           border-bottom: 2px solid #ffffff;
           padding-bottom: 4px;
           &.active {
+            border-bottom: 2px solid #0471a6;
+          }
+          &:active {
             border-bottom: 2px solid #0471a6;
           }
         }

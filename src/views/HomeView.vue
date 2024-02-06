@@ -69,7 +69,7 @@ import FooterSect from "../components/FooterSect.vue";
         </div>
       </div>
     </section>
-    <FooterSect />
+    <FooterSect id="footer" />
   </main>
 </template>
 <style lang="scss">
