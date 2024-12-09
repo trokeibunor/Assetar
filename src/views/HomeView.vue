@@ -26,7 +26,7 @@ import FooterSect from "../components/FooterSect.vue";
             first trade today.
           </p>
           <div class="button-row">
-            <button class="main-button">Trade with Us</button>
+            <a href="https://wa.link/5k6c6f" class="main-button">Trade with Us</a>
             <button class="outline-button">Learn More</button>
           </div>
         </div>
@@ -43,7 +43,7 @@ import FooterSect from "../components/FooterSect.vue";
       <div class="content">
         <div id="cont">
           <div class="text-sect">
-            <h3>Let’s Secure your Future with</h3>
+            <h3>Let's Secure your Future with</h3>
             <h3 id="second">
               Our Service
               <svg
@@ -61,7 +61,7 @@ import FooterSect from "../components/FooterSect.vue";
             </h3>
           </div>
           <div class="btn-hold">
-            <button>Get Started</button>
+            <a id="hello" href="https://wa.link/5k6c6f" target="_blank">Get Started</a>
             <p>
               Join thousands of other folks to have the best trading experience
             </p>
@@ -218,7 +218,7 @@ main {
         .btn-hold {
           display: flex;
           flex-direction: column;
-          button {
+          #hello {
             width: fit-content;
             border-radius: 0.5rem;
             background: #0471a6;
@@ -227,6 +227,7 @@ main {
             padding: 12px 16px;
             border: none;
             cursor: pointer;
+            text-decoration: none;
           }
           p {
             width: 10rem;

@@ -43,7 +43,7 @@ import faqSect from "../components/faqSect.vue";
             </h3>
           </div>
           <div class="btn-hold">
-            <button>Get Started</button>
+            <a href="https://wa.link/5k6c6f" target="_blank">Get Started</a>
             <p>
               Join thousands of other folks to have the best trading experience
             </p>

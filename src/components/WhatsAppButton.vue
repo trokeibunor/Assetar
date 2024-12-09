@@ -9,9 +9,9 @@
     name: 'WhatsAppButton',
     methods: {
       openWhatsApp() {
-        const phoneNumber = '+1234567890'; // Your WhatsApp number
-        const message = 'Hello! How can we help you?';
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        // const phoneNumber = '+1234567890'; // Your WhatsApp number
+        // const message = 'Hello! How can we help you?';
+        const url = `https://wa.link/5k6c6f`;
         window.open(url, '_blank');
       }
     }

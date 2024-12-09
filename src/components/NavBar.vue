@@ -15,7 +15,7 @@
       </div>
       <div class="buttons">
         <p>Socials</p>
-        <button>Get Started</button>
+        <a href="https://wa.link/5k6c6f" target="_blank">Get Started</a>
       </div>
       <button
         class="hamburger hamburger--spring"
@@ -133,7 +133,7 @@ nav {
         cursor: pointer;
         font-weight: 600;
       }
-      button {
+      a {
         border-radius: 0.5rem;
         background: #0471a6;
         outline: none;
@@ -141,6 +141,7 @@ nav {
         padding: 12px 16px;
         border: none;
         cursor: pointer;
+        text-decoration: none;
       }
     }
     .hamburger {
