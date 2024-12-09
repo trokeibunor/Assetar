@@ -14,7 +14,7 @@
         <p @click="$router.push('/#footer')">Contact us</p>
       </div>
       <div class="buttons">
-        <p>Socials</p>
+        <p @click="$router.push('/#footer')">Socials</p>
         <a href="https://wa.link/5k6c6f" target="_blank">Get Started</a>
       </div>
       <button
