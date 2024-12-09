@@ -14,8 +14,8 @@ import faqSect from "../components/faqSect.vue";
             Africa's Fastest and Easiest Cryptocurrency Exchange
           </h2>
           <div class="button-row">
-            <button class="main-button">Trade with Us</button>
-            <button class="outline-button">Learn More</button>
+            <a href="https://wa.link/5k6c6f" class="main-button" style="text-decoration: none;">Trade with Us</a>
+            <!-- <button class="outline-button">Learn More</button> -->
           </div>
         </div>
       </div>
