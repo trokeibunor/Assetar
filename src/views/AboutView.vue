@@ -25,7 +25,7 @@ import faqSect from "../components/faqSect.vue";
       <div class="content">
         <div id="cont">
           <div class="text-sect">
-            <h3>Let’s Secure your Future with</h3>
+            <h3>Let's Secure your Future with</h3>
             <h3 id="second">
               Our Service
               <svg
@@ -43,7 +43,7 @@ import faqSect from "../components/faqSect.vue";
             </h3>
           </div>
           <div class="btn-hold">
-            <a href="https://wa.link/5k6c6f" target="_blank">Get Started</a>
+            <a id="hello" href="https://wa.link/5k6c6f" target="_blank">Get Started</a>
             <p>
               Join thousands of other folks to have the best trading experience
             </p>
@@ -75,5 +75,23 @@ section.hero {
 .btm-talk {
   background: linear-gradient(to bottom, #0471a6 50%, #fff 50%) !important;
   padding: 1rem 0rem;
+}
+.btn-hold {
+display: flex;
+flex-direction: column;
+#hello {
+  width: fit-content;
+  border-radius: 0.5rem;
+  background: #0471a6;
+  outline: none;
+  color: #fff;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+p {
+  width: 10rem;
+}
 }
 </style>
