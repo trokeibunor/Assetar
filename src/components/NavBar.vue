@@ -11,7 +11,7 @@
       <div class="nav-list">
         <p @click="$router.push('/about')">About Us</p>
         <p @click="$router.push('/#testimonial')">Testimonials</p>
-        <p>Contact us</p>
+        <p @click="$router.push('/#footer')">Contact us</p>
       </div>
       <div class="buttons">
         <p>Socials</p>
@@ -84,9 +84,12 @@ const activeLink = ref("");
 
 <style lang="scss" scoped>
 nav {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   width: 100%;
   height: auto;
+  background-color: white;
   .top-info {
     background-image: url(../assets/images/top-info.png);
     width: 100%;
@@ -103,6 +106,7 @@ nav {
     height: fit-content;
     display: flex;
     justify-content: space-between;
+
     // position: relative;
     // z-index: 10;
     .logo,

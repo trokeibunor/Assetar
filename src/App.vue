@@ -1,9 +1,11 @@
 <script setup>
 import { RouterView } from "vue-router";
+import WhatsAppButton from "./components/WhatsAppButton.vue";
 </script>
 
 <template>
   <RouterView />
+  <WhatsAppButton/>
 </template>
 
 <style lang="scss">
