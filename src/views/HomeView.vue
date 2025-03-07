@@ -26,7 +26,12 @@ import FooterSect from "../components/FooterSect.vue";
             first trade today.
           </p>
           <div class="button-row">
-            <a href="https://wa.link/5k6c6f" class="main-button" style="text-decoration: none;">Trade with Us</a>
+            <a
+              href="https://wa.link/5k6c6f"
+              class="main-button"
+              style="text-decoration: none"
+              >Trade with Us</a
+            >
             <button class="outline-button" @click="$router.push('#offers');">Learn More</button>
           </div>
         </div>
@@ -125,7 +130,7 @@ main {
           padding: 0;
           &:first-of-type {
             color: var(--White-1, #fff);
-            background: #0471a6;
+            background: #4dafe0;
             padding: 0.5rem 1rem;
             border-radius: 0.75rem;
           }

@@ -27,8 +27,9 @@ button {
   outline: none;
   font-weight: 700;
   @media #{$media-mobile} {
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding: 0.5rem 1rem;
+    border-radius: 8px;
   }
 }
 .outline-button {
@@ -44,7 +45,8 @@ button {
   font-size: 1rem;
   font-weight: 700;
   @media #{$media-mobile} {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     padding: 0.5rem 1rem;
+    border-radius: 8px;
   }
 }
