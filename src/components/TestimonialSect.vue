@@ -43,7 +43,7 @@
         <div class="testimonial">
           <div class="content">
             <p class="word">
-              I have been trading with Asseter for almost a year now and it’s
+              I have been trading with Assetar for almost a year now and it’s
               been a really great experience so far. For me meeting up to time
               and delivery early is important and that’s what I’ve experienced
               with Assetar so far.

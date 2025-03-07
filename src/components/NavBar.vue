@@ -6,7 +6,7 @@
     <div class="nav-content">
       <div class="logo" @click="$router.push('/')">
         <img src="../assets/images//logo.png" alt="" />
-        <h4>Asseter</h4>
+        <h4>Assetar</h4>
       </div>
       <div class="nav-list">
         <p @click="$router.push('/about')">About Us</p>
