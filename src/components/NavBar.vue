@@ -161,6 +161,7 @@ nav {
     .hamburger {
       display: block !important;
       background-color: white;
+      transform: scale(0.8);
     }
     .mobile-dropdown {
       background: white;

@@ -4,8 +4,11 @@
       <div class="intro">
         <h2>How Assetar Works</h2>
         <p class="subheader">
-          We make it simple to buy cryptocurrency with fiat money and to <br />
-          exchange cryptocurrency for fiat money.
+          At Assetar, we simplify the process of buying and exchanging <br />
+          cryptocurrency with fiat money. Our platform is designed to ensure a
+          <br />
+          seamless and secure experience for our users. Here's how we make it
+          happen:
         </p>
       </div>
       <div class="service-grid">
@@ -14,50 +17,49 @@
             <img src="../assets/images/svg/cursor_icon.svg" alt="" />
             <h3>Minimal transaction costs</h3>
             <p>
-              There are numerous scammers out there, as we are aware. We're here
-              to make sure you're protected. This is why we follow a thorough
-              KYC procedure to confirm each user's identification so you may
-              fund your account with the required funds before you start trading
-              cryptocurrency!
+              We understand the prevalence of scammers in the cryptocurrency
+              space. To protect our users, we implement a thorough KYC (Know
+              Your Customer) procedure to verify each user's identity. This
+              ensures that you can fund your account with the necessary funds
+              before you start trading cryptocurrency.
             </p>
           </div>
         </div>
         <div class="grid-item">
           <div id="content">
             <img src="../assets/images/svg/cursor_icon.svg" alt="" />
-            <h3>Minimal transaction costs</h3>
+            <h3>Fast and Convenient Transactions</h3>
             <p>
-              There are numerous scammers out there, as we are aware. We're here
-              to make sure you're protected. This is why we follow a thorough
-              KYC procedure to confirm each user's identification so you may
-              fund your account with the required funds before you start trading
-              cryptocurrency!
+              With Assetar, you can buy, use, trade, and manage cryptocurrencies
+              quickly and conveniently using our online services. We make it
+              easy to buy cryptocurrency with fiat money and to exchange
+              cryptocurrency for fiat money. Additionally, our platform allows
+              you to build and manage your own portfolio effortlessly.
             </p>
           </div>
         </div>
         <div class="grid-item">
           <div id="content">
             <img src="../assets/images/svg/cursor_icon.svg" alt="" />
-            <h3>Minimal transaction costs</h3>
+            <h3>Secure and Reliable</h3>
             <p>
-              You may buy, use, trade, and manage cryptocurrencies fast and
-              conveniently using our online services. We make it simple to buy
-              cryptocurrency with fiat money and to exchange cryptocurrency for
-              fiat money. Additionally, we make it simple for you to build your
-              own portfolio and oversee your assets.
+              Our commitment to security means that you can trade with
+              confidence. We follow industry best practices to safeguard your
+              assets and personal information. Whether you're a seasoned trader
+              or new to the world of cryptocurrency, Assetar provides a reliable
+              and user-friendly platform for all your trading needs.
             </p>
           </div>
         </div>
         <div class="grid-item">
           <div id="content">
             <img src="../assets/images/svg/cursor_icon.svg" alt="" />
-            <h3>Minimal transaction costs</h3>
+            <h3>Messaging Applications Integration</h3>
             <p>
-              There are numerous scammers out there, as we are aware. We're here
-              to make sure you're protected. This is why we follow a thorough
-              KYC procedure to confirm each user's identification so you may
-              fund your account with the required funds before you start trading
-              cryptocurrency!
+              To enhance communication and support, we utilize popular messaging
+              applications. This allows us to provide timely assistance and
+              updates to our users, ensuring that you have the support you need
+              whenever you need it.
             </p>
           </div>
         </div>
