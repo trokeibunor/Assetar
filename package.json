@@ -12,6 +12,7 @@
     "lintfix": "prettier --write --list-different . && npm run lint:js --fix"
   },
   "dependencies": {
+    "gatsby-plugin-netlify": "^5.1.1",
     "gsap": "^3.11.1",
     "pinia": "^2.0.21",
     "swiper": "^10.0.0",

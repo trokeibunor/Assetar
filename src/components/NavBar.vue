@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="top-info">
-      <p>Trade your coins and tokens crazy speed</p>
+      <p>Private, Personalized, Anonymous Digital Assets Trading</p>
     </div>
     <div class="nav-content">
       <div class="logo" @click="$router.push('/')">

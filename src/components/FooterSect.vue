@@ -5,18 +5,18 @@
         <h5>Contact Us</h5>
         <ul>
           <li>
-            <a href="tel:+">
+            <a href="tel:+2348034460010">
               <!-- <img src="../assets/images/phone_icon.svg" alt="" /> -->
-              +234 9015379412</a
+              ++2348034460010</a
             >
           </li>
           <li>
-            <a href="mailto:">
+            <a href="mailto:assetar.co@gmail.com">
               <!-- <img
                 src="../assets/images/mail_ftIcon.svg"
                 alt=""
               /> -->
-              asseterexchange@gmail.com
+              assetar.co@gmail.com
             </a>
           </li>
           <!-- <li>
@@ -30,10 +30,34 @@
         <ul>
           <li><a @click="routeTo('/#faq')">Frequently asked questions</a></li>
           <li><a @click="routeTo('/about#fromMan')">How we operate</a></li>
-          <li><a href="https://youtube.com/@assetar_co?si=p1AVedcAM-HS8IOt" target="_blank">Youtube</a></li>
-          <li><a href="https://instagram.com/assetar.co?igshid=NTc4MTIwNjQ2YQ==" target="_blank">Instagram</a></li>
-          <li><a href="https://www.tiktok.com/@assetar.co?_t=8bwxxyherd7&_r=1" target="_blank">Tiktok</a></li>
-          <li><a href="https://twitter.com/co_assetar?t=NW1lulxHUcHmUeUchXNx1A&s=09" target="_blank">X (Twitter)</a></li>
+          <li>
+            <a
+              href="https://youtube.com/@assetar_co?si=p1AVedcAM-HS8IOt"
+              target="_blank"
+              >Youtube</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/assetar.co?igshid=NTc4MTIwNjQ2YQ=="
+              target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.tiktok.com/@assetar.co?_t=8bwxxyherd7&_r=1"
+              target="_blank"
+              >Tiktok</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/co_assetar?t=NW1lulxHUcHmUeUchXNx1A&s=09"
+              target="_blank"
+              >X (Twitter)</a
+            >
+          </li>
         </ul>
       </div>
     </div>

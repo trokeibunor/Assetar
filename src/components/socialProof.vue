@@ -3,6 +3,14 @@
     <h4 class="intro">We actively trade on these platforms</h4>
     <div class="image-row">
       <img
+        src="https://cdn.brandfetch.io/idChRKdWP4/w/512/h/512/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
+        alt=""
+      />
+      <img
+        src="https://cdn.brandfetch.io/id8fwcm2BN/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+        alt=""
+      />
+      <img
         src="https://cdn.brandfetch.io/idFbd86e4i/w/820/h/321/theme/light/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
         style="background-color: black; border-radius: 8px"
