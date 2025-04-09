@@ -14,7 +14,12 @@ import faqSect from "../components/faqSect.vue";
             Africa's Fastest and Easiest Cryptocurrency Exchange
           </h2>
           <div class="button-row">
-            <a href="https://wa.link/5k6c6f" class="main-button" style="text-decoration: none;">Trade with Us</a>
+            <a
+              href="https://wa.link/5k6c6f"
+              class="main-button"
+              style="text-decoration: none"
+              >Trade with Us</a
+            >
             <!-- <button class="outline-button">Learn More</button> -->
           </div>
         </div>
@@ -43,7 +48,12 @@ import faqSect from "../components/faqSect.vue";
             </h3>
           </div>
           <div class="btn-hold">
-            <a id="hello" href="https://wa.me/message/JJBUQRUINMSTM1" target="_blank">Get Started</a>
+            <a
+              id="hello"
+              href="https://wa.me/message/JJBUQRUINMSTM1"
+              target="_blank"
+              >Get Started</a
+            >
             <p>
               Join thousands of other folks to have the best trading experience
             </p>
@@ -77,21 +87,21 @@ section.hero {
   padding: 1rem 0rem;
 }
 .btn-hold {
-display: flex;
-flex-direction: column;
-#hello {
-  width: fit-content;
-  border-radius: 0.5rem;
-  background: #0471a6;
-  outline: none;
-  color: #fff;
-  padding: 12px 16px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-p {
-  width: 10rem;
-}
+  display: flex;
+  flex-direction: column;
+  #hello {
+    width: fit-content;
+    border-radius: 0.5rem;
+    background: #0471a6;
+    outline: none;
+    color: #fff;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  p {
+    width: 10rem;
+  }
 }
 </style>

@@ -13,10 +13,6 @@ import FooterSect from "../components/FooterSect.vue";
     <section class="hero">
       <div class="text-section">
         <div class="content">
-          <div class="notif">
-            <p>Speed</p>
-            <p>Trading done in an instant, yes we're that fast</p>
-          </div>
           <h2 class="intro-text">
             Easy, fast and secure cryptocurrency exchange for everyone
           </h2>

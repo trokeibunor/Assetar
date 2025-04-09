@@ -15,10 +15,10 @@
         alt=""
         style="background-color: black; border-radius: 8px"
       />
-      <img
+      <!-- <img
         src="https://cdn.brandfetch.io/id-pjrLx_q/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
-      />
+      /> -->
       <img
         src="https://cdn.brandfetch.io/idwDWo4ONQ/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
