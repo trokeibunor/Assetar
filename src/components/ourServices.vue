@@ -17,11 +17,11 @@
             <img src="../assets/images/svg/cursor_icon.svg" alt="" />
             <h3>Minimal transaction costs</h3>
             <p>
-              We understand the prevalence of scammers in the cryptocurrency
-              space. To protect our users, we implement a thorough KYC (Know
-              Your Customer) procedure to verify each user's identity. This
-              ensures that you can fund your account with the necessary funds
-              before you start trading cryptocurrency.
+              We keep our transaction costs minimal by optimizing our operations
+              and leveraging efficient blockchain networks. This allows us to
+              provide competitive rates for cryptocurrency trading while
+              ensuring that you get the maximum value for your transactions. Our
+              transparent fee structure means no hidden charges.
             </p>
           </div>
         </div>
