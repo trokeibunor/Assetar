@@ -7,7 +7,7 @@
           <li>
             <a href="tel:+2348034460010">
               <!-- <img src="../assets/images/phone_icon.svg" alt="" /> -->
-              ++2348034460010</a
+              +2348034460010</a
             >
           </li>
           <li>
@@ -28,8 +28,6 @@
       <div class="ftlinks">
         <h5>Social Links</h5>
         <ul>
-          <li><a @click="routeTo('/#faq')">Frequently asked questions</a></li>
-          <li><a @click="routeTo('/about#fromMan')">How we operate</a></li>
           <li>
             <a
               href="https://youtube.com/@assetar_co?si=p1AVedcAM-HS8IOt"
@@ -66,10 +64,6 @@
 </template>
 
 <script setup>
-import router from "../router";
-function routeTo(x) {
-  router.push(x);
-}
 </script>
 
 <style lang="scss" scoped>
