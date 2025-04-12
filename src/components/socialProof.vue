@@ -2,10 +2,10 @@
   <section>
     <h4 class="intro">We actively trade on these platforms</h4>
     <div class="image-row">
-      <img
+      <!-- <img
         src="https://cdn.brandfetch.io/idChRKdWP4/w/512/h/512/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
-      />
+      /> -->
       <img
         src="https://cdn.brandfetch.io/id8fwcm2BN/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
