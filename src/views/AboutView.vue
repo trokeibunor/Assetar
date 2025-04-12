@@ -15,9 +15,10 @@ import faqSect from "../components/faqSect.vue";
           </h2>
           <div class="button-row">
             <a
-              href="https://wa.link/5k6c6f"
+              href="https://wa.me/message/JJBUQRUINMSTM1"
               class="main-button"
               style="text-decoration: none"
+              target="_blank"
               >Trade with Us</a
             >
             <!-- <button class="outline-button">Learn More</button> -->

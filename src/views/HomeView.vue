@@ -62,7 +62,12 @@ import FooterSect from "../components/FooterSect.vue";
             </h3>
           </div>
           <div class="btn-hold">
-            <a id="hello" href="https://wa.link/5k6c6f" target="_blank">Get Started</a>
+            <a
+              id="hello"
+              href="https://wa.me/message/JJBUQRUINMSTM1"
+              target="_blank"
+              >Get Started</a
+            >
             <p>
               Join thousands of other folks to have the best trading experience
             </p>
