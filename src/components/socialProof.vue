@@ -11,22 +11,19 @@
         alt=""
       />
       <img
-        src="https://cdn.brandfetch.io/idFbd86e4i/w/820/h/321/theme/light/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
+        src="https://cdn.brandfetch.io/id_9cjxPXk/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
-        style="background-color: black; border-radius: 8px"
       />
-      <!-- <img
-        src="https://cdn.brandfetch.io/id-pjrLx_q/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
-        alt=""
-      /> -->
+      <img src="../assets/svgs/exodus-seeklogo.svg" alt="" />
       <img
-        src="https://cdn.brandfetch.io/idwDWo4ONQ/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+        src="https://cdn.brandfetch.io/idChRKdWP4/w/512/h/512/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
       />
       <img
         src="https://cdn.brandfetch.io/id_HKIytUb/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
       />
+      <img src="../assets/svgs/Trust_Wallet_Core_Logo_Blue.svg" alt="" />
     </div>
   </section>
 </template>
