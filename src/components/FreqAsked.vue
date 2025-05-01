@@ -9,7 +9,12 @@
       </p>
     </div>
     <div class="fqCon">
-      <div class="fqBox" id="firstQ" @click="firstQ = !firstQ">
+      <div
+        class="fqBox"
+        id="firstQ"
+        @click.prevent="firstQ = !firstQ"
+        @touchstart.prevent="firstQ = !firstQ"
+      >
         <p id="fqTitle">How do I get started</p>
         <p v-if="firstQ">
           We leave room for criticism and applause of our service, after every
@@ -17,7 +22,12 @@
           independently . Here is what they had to say
         </p>
       </div>
-      <div class="fqBox" id="secondQ" @click="secondQ = !secondQ">
+      <div
+        class="fqBox"
+        id="secondQ"
+        @click.prevent="secondQ = !secondQ"
+        @touchstart.prevent="secondQ = !secondQ"
+      >
         <p id="fqTitle">How do I get started</p>
         <p v-if="secondQ">
           We leave room for criticism and applause of our service, after every
@@ -25,7 +35,12 @@
           independently . Here is what they had to say
         </p>
       </div>
-      <div class="fqBox" id="thirdQ" @click="thirdQ = !thirdQ">
+      <div
+        class="fqBox"
+        id="thirdQ"
+        @click.prevent="thirdQ = !thirdQ"
+        @touchstart.prevent="thirdQ = !thirdQ"
+      >
         <p id="fqTitle">How do I get started</p>
         <p v-if="thirdQ">
           We leave room for criticism and applause of our service, after every
@@ -33,7 +48,12 @@
           independently . Here is what they had to say
         </p>
       </div>
-      <div class="fqBox" id="fourthQ" @click="fourthQ = !fourthQ">
+      <div
+        class="fqBox"
+        id="fourthQ"
+        @click.prevent="fourthQ = !fourthQ"
+        @touchstart.prevent="fourthQ = !fourthQ"
+      >
         <p id="fqTitle">How do I get started</p>
         <p v-if="fourthQ">
           We leave room for criticism and applause of our service, after every

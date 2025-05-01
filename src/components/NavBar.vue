@@ -4,23 +4,51 @@
       <p>Private, Personalized, Anonymous Digital Assets Trading</p>
     </div>
     <div class="nav-content">
-      <div class="logo" @click="$router.push('/')">
+      // eslint-disable-next-line prettier/prettier
+      <div
+        class="logo"
+        @click.prevent="$router.push('/')"
+        @touchstart.prevent="$router.push('/')"
+      >
         <img src="../assets/images//logo.png" alt="" />
         <h4>Assetar</h4>
       </div>
       <div class="nav-list">
-        <p @click="$router.push('/about')">About Us</p>
-        <p @click="$router.push('/#testimonial')">Testimonials</p>
-        <p @click="$router.push('/#footer')">Contact us</p>
+        <p @click.prevent="$router.push('/about')" @touchstart.prevent="$router.push('/about')">
+          About Us
+        </p>
+        <p @click.prevent="$router.push('/about')" @touchstart.prevent="$router.push('/about')">
+          About Us
+        </p>
+        <p
+          @click.prevent="$router.push('/#testimonial')"
+          @touchstart.prevent="$router.push('/#testimonial')"
+        >
+          Testimonials
+        </p>
+        <p
+          @click.prevent="$router.push('/#footer')"
+          @touchstart.prevent="$router.push('/#footer')"
+        >
+          Contact us
+        </p>
       </div>
       <div class="buttons">
-        <p @click="$router.push('/#footer')">Socials</p>
-        <a href="https://wa.me/message/JJBUQRUINMSTM1" target="_blank">Get Started</a>
+        <p
+          @click.prevent="$router.push('/#footer')"
+          @touchstart.prevent="$router.push('/#footer')"
+        >
+          Socials
+        </p>
+        <a href="https://wa.me/message/JJBUQRUINMSTM1" target="_blank"
+          >Get Started</a
+        >
       </div>
       <button
         class="hamburger hamburger--spring"
         :class="isActive ? 'is-active' : ''"
-        @click="isActive = !isActive"
+        @click.prevent="isActive = !isActive"
+        @touchstart.prevent="isActive = !isActive"
         type="button"
       >
         <span class="hamburger-box">
@@ -33,7 +61,12 @@
       <div class="mb-nav-list">
         <p
           :class="activeLink == 'home' ? 'active' : ''"
-          @click="
+          @click.prevent="
+            $router.push('/');
+            isActive = false;
+            activeLink = 'home';
+          "
+          @touchstart.prevent="
             $router.push('/');
             isActive = false;
             activeLink = 'home';
@@ -43,7 +76,12 @@
         </p>
         <p
           :class="activeLink == 'about' ? 'active' : ''"
-          @click="
+          @click.prevent="
+            $router.push('/about');
+            isActive = false;
+            activeLink = 'about';
+          "
+          @touchstart.prevent="
             $router.push('/about');
             isActive = false;
             activeLink = 'about';
@@ -53,7 +91,12 @@
         </p>
         <p
           :class="activeLink == 'testimonial' ? 'active' : ''"
-          @click="
+          @click.prevent="
+            $router.push('/#testimonial');
+            isActive = false;
+            activeLink = 'testimonial';
+          "
+          @touchstart.prevent="
             $router.push('/#testimonial');
             isActive = false;
             activeLink = 'testimonial';
@@ -63,7 +106,12 @@
         </p>
         <p
           :class="activeLink == 'social' ? 'active' : ''"
-          @click="
+          @click.prevent="
+            $router.push('/#footer');
+            isActive = false;
+            activeLink = 'social';
+          "
+          @touchstart.prevent="
             $router.push('/#footer');
             isActive = false;
             activeLink = 'social';

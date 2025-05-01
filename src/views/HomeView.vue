@@ -28,7 +28,13 @@ import FooterSect from "../components/FooterSect.vue";
               style="text-decoration: none"
               >Trade with Us</a
             >
-            <button class="outline-button" @click="$router.push('#offers');">Learn More</button>
+            <button
+              class="outline-button"
+              @click.prevent="$router.push('#offers')"
+              @touchstart.prevent="$router.push('#offers')"
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </div>
@@ -37,7 +43,7 @@ import FooterSect from "../components/FooterSect.vue";
       </div>
     </section>
     <socialProof />
-    <ourOffers id="offers"/>
+    <ourOffers id="offers" />
     <ourServices />
     <TestimonialSect id="testimonial" />
     <section class="btm-talk">

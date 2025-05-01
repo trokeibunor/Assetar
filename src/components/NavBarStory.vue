@@ -2,18 +2,31 @@
   <nav>
     <img id="logo" src="../assets/images/logo.png" alt="logoImage" />
     <div class="navMenu">
-      <a @click="routeTo('/')">Home</a>
-      <a @click="routeTo('/#token')">Token</a>
-      <a @click="routeTo('about')">Our Story</a>
-      <a @click="routeTo('/#contact')" id="conBtn">Contact Us</a>
+      <a @click.prevent="routeTo('/')" @touchstart.prevent="routeTo('/')">Home</a>
+      <a @click.prevent="routeTo('/#token')" @touchstart.prevent="routeTo('/#token')">Token</a>
+      <a @click.prevent="routeTo('about')" @touchstart.prevent="routeTo('about')">Our Story</a>
+      <a
+        @click.prevent="routeTo('/#contact')"
+        id="conBtn"
+        @touchstart.prevent="routeTo('/#contact')"
+        >Contact Us</a
+      >
     </div>
     <!-- Mobile toggler -->
     <div class="navToggler">
-      <button v-show="isNavOpen" @click="isNavOpen = false">
+      <button
+        v-show="isNavOpen"
+        @click.prevent="isNavOpen = false"
+        @touchstart.prevent="isNavOpen = false"
+      >
         <!-- <span class="material-symbols-outlined"> menu </span> -->
         <img src="../assets/images/menu_hamburger_story.svg" alt="" srcset="" />
       </button>
-      <button v-show="!isNavOpen" @click="isNavOpen = true">
+      <button
+        v-show="!isNavOpen"
+        @click.prevent="isNavOpen = true"
+        @touchstart.prevent="isNavOpen = true"
+      >
         <!-- <span class="material-symbols-outlined"> close </span> -->
         <img src="../assets/images/cancel_icon.svg" alt="" srcset="" />
       </button>
@@ -23,10 +36,17 @@
     <!-- logo -->
     <!-- sideMenu -->
     <div class="sidemenu" v-if="!isNavOpen">
-      <a @click="routeTo('/')">Home</a>
-      <a @click="routeTo('/#token')">Token</a>
-      <a @click="routeTo('/#contact')" id="conBtn">Contact Us</a>
-      <a class="active" @click="routeTo('about')">Our Story</a>
+      <a @click.prevent="routeTo('/')" @touchstart.prevent="routeTo('/')">Home</a>
+      <a @click.prevent="routeTo('/#token')" @touchstart.prevent="routeTo('/#token')">Token</a>
+      <a
+        @click.prevent="routeTo('/#contact')"
+        id="conBtn"
+        @touchstart.prevent="routeTo('/#contact')"
+        >Contact Us</a
+      >
+      <a class="active" @click.prevent="routeTo('about')" @touchstart.prevent="routeTo('about')"
+        >Our Story</a
+      >
     </div>
   </aside>
 </template>
