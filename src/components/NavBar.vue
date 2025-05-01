@@ -4,7 +4,6 @@
       <p>Private, Personalized, Anonymous Digital Assets Trading</p>
     </div>
     <div class="nav-content">
-      // eslint-disable-next-line prettier/prettier
       <div
         class="logo"
         @click.prevent="$router.push('/')"
@@ -14,10 +13,16 @@
         <h4>Assetar</h4>
       </div>
       <div class="nav-list">
-        <p @click.prevent="$router.push('/about')" @touchstart.prevent="$router.push('/about')">
+        <p
+          @click.prevent="$router.push('/about')"
+          @touchstart.prevent="$router.push('/about')"
+        >
           About Us
         </p>
-        <p @click.prevent="$router.push('/about')" @touchstart.prevent="$router.push('/about')">
+        <p
+          @click.prevent="$router.push('/about')"
+          @touchstart.prevent="$router.push('/about')"
+        >
           About Us
         </p>
         <p

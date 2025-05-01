@@ -1,5 +1,9 @@
 <template>
-  <div class="whatsapp-button" @click.prevent="openWhatsApp" @touchstart.prevent="openWhatsApp">
+  <div
+    class="whatsapp-button"
+    @click.prevent="openWhatsApp"
+    @touchstart.prevent="openWhatsApp"
+  >
     <svg
       width="32"
       height="32"
