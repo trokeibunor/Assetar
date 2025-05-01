@@ -7,7 +7,6 @@
       <div
         class="logo"
         @click.prevent="$router.push('/')"
-        @touchstart.prevent="$router.push('/')"
       >
         <img src="../assets/images//logo.png" alt="" />
         <h4>Assetar</h4>
@@ -15,25 +14,23 @@
       <div class="nav-list">
         <p
           @click.prevent="$router.push('/about')"
-          @touchstart.prevent="$router.push('/about')"
+
         >
           About Us
         </p>
         <p
           @click.prevent="$router.push('/about')"
-          @touchstart.prevent="$router.push('/about')"
         >
           About Us
         </p>
         <p
           @click.prevent="$router.push('/#testimonial')"
-          @touchstart.prevent="$router.push('/#testimonial')"
         >
           Testimonials
         </p>
         <p
           @click.prevent="$router.push('/#footer')"
-          @touchstart.prevent="$router.push('/#footer')"
+  
         >
           Contact us
         </p>
@@ -41,7 +38,7 @@
       <div class="buttons">
         <p
           @click.prevent="$router.push('/#footer')"
-          @touchstart.prevent="$router.push('/#footer')"
+        
         >
           Socials
         </p>
@@ -53,7 +50,7 @@
         class="hamburger hamburger--spring"
         :class="isActive ? 'is-active' : ''"
         @click.prevent="isActive = !isActive"
-        @touchstart.prevent="isActive = !isActive"
+      
         type="button"
       >
         <span class="hamburger-box">
@@ -71,22 +68,12 @@
             isActive = false;
             activeLink = 'home';
           "
-          @touchstart.prevent="
-            $router.push('/');
-            isActive = false;
-            activeLink = 'home';
-          "
         >
           Home
         </p>
         <p
           :class="activeLink == 'about' ? 'active' : ''"
           @click.prevent="
-            $router.push('/about');
-            isActive = false;
-            activeLink = 'about';
-          "
-          @touchstart.prevent="
             $router.push('/about');
             isActive = false;
             activeLink = 'about';
@@ -101,22 +88,12 @@
             isActive = false;
             activeLink = 'testimonial';
           "
-          @touchstart.prevent="
-            $router.push('/#testimonial');
-            isActive = false;
-            activeLink = 'testimonial';
-          "
         >
           Testimonials
         </p>
         <p
           :class="activeLink == 'social' ? 'active' : ''"
           @click.prevent="
-            $router.push('/#footer');
-            isActive = false;
-            activeLink = 'social';
-          "
-          @touchstart.prevent="
             $router.push('/#footer');
             isActive = false;
             activeLink = 'social';

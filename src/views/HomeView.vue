@@ -31,7 +31,6 @@ import FooterSect from "../components/FooterSect.vue";
             <button
               class="outline-button"
               @click.prevent="$router.push('#offers')"
-              @touchstart.prevent="$router.push('#offers')"
             >
               Learn More
             </button>

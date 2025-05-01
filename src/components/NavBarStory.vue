@@ -2,23 +2,23 @@
   <nav>
     <img id="logo" src="../assets/images/logo.png" alt="logoImage" />
     <div class="navMenu">
-      <a @click.prevent="routeTo('/')" @touchstart.prevent="routeTo('/')"
+      <a @click.prevent="routeTo('/')"
         >Home</a
       >
       <a
         @click.prevent="routeTo('/#token')"
-        @touchstart.prevent="routeTo('/#token')"
+      
         >Token</a
       >
       <a
         @click.prevent="routeTo('about')"
-        @touchstart.prevent="routeTo('about')"
+       
         >Our Story</a
       >
       <a
         @click.prevent="routeTo('/#contact')"
         id="conBtn"
-        @touchstart.prevent="routeTo('/#contact')"
+        
         >Contact Us</a
       >
     </div>
@@ -27,7 +27,7 @@
       <button
         v-show="isNavOpen"
         @click.prevent="isNavOpen = false"
-        @touchstart.prevent="isNavOpen = false"
+        
       >
         <!-- <span class="material-symbols-outlined"> menu </span> -->
         <img src="../assets/images/menu_hamburger_story.svg" alt="" srcset="" />
@@ -35,7 +35,7 @@
       <button
         v-show="!isNavOpen"
         @click.prevent="isNavOpen = true"
-        @touchstart.prevent="isNavOpen = true"
+        
       >
         <!-- <span class="material-symbols-outlined"> close </span> -->
         <img src="../assets/images/cancel_icon.svg" alt="" srcset="" />
@@ -46,24 +46,23 @@
     <!-- logo -->
     <!-- sideMenu -->
     <div class="sidemenu" v-if="!isNavOpen">
-      <a @click.prevent="routeTo('/')" @touchstart.prevent="routeTo('/')"
+      <a @click.prevent="routeTo('/')" 
         >Home</a
       >
       <a
         @click.prevent="routeTo('/#token')"
-        @touchstart.prevent="routeTo('/#token')"
+        
         >Token</a
       >
       <a
         @click.prevent="routeTo('/#contact')"
         id="conBtn"
-        @touchstart.prevent="routeTo('/#contact')"
+        
         >Contact Us</a
       >
       <a
         class="active"
         @click.prevent="routeTo('about')"
-        @touchstart.prevent="routeTo('about')"
         >Our Story</a
       >
     </div>
