@@ -7,8 +7,15 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
   build: {
     target: "es2015",
+    ssr: true, // Enable SSR/SSG build
   },
-  plugins: [vue()],
+  plugins: [
+    vue({
+      template: {
+        ssr: true
+      },
+    }),
+  ],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
