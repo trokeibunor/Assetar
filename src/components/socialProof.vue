@@ -31,6 +31,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+@use "/src/assets/styles/partials/variables" as v;
 section {
   background: var(--Grey-bglast, #f9fbfc);
   max-width: 100%;
@@ -55,7 +56,7 @@ section {
     object-fit: contain;
     width: 150px;
   }
-  @media #{$media-mobile} {
+  @media #{v.$media-mobile} {
     .image-row {
       width: 100%;
       position: relative;

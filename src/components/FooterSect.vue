@@ -67,7 +67,7 @@
 </script>
 
 <style lang="scss" scoped>
-// @import "../assets/variables.scss";
+@use "/src/assets/styles/partials/variables" as v;
 ul {
   list-style: none;
   margin: 0;
@@ -121,7 +121,7 @@ footer {
     // border-radius: 40px 40px 0px 0px;
     font-family: "Clash Display";
   }
-  @media #{$media-mobile} {
+  @media #{v.$media-mobile} {
     .list_row {
       flex-direction: column;
     }

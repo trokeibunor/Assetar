@@ -67,7 +67,7 @@ const message = ref("");
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/variables.scss";
+@use "/src/assets/styles/partials/variables" as v;
 .contactSect {
   background-color: #035a85;
   color: #fff;
@@ -163,7 +163,7 @@ const message = ref("");
     }
   }
 }
-@media #{$media-mobile} {
+@media #{v.$media-mobile} {
   .contactSect {
     padding: 1.5rem 0px;
     margin: 1.5rem 0px;

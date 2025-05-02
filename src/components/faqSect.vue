@@ -75,6 +75,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+@use "/src/assets/styles/partials/variables" as v;
 .faqSect {
   width: 100%;
   padding: 2rem 0px;
@@ -161,7 +162,7 @@
       }
     }
   }
-  @media #{$media-mobile} {
+  @media #{v.$media-mobile} {
     .content {
       gap: 1rem;
       flex-direction: column;

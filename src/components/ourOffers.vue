@@ -64,6 +64,7 @@
 <script></script>
 
 <style lang="scss" scoped>
+@use "/src/assets/styles/partials/variables" as v;
 section {
   width: 100%;
   padding: 2rem 0rem;
@@ -130,7 +131,7 @@ section {
       }
     }
   }
-  @media #{$media-mobile} {
+  @media #{v.$media-mobile} {
     .content {
       .offer-grid {
         position: relative;

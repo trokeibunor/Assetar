@@ -113,6 +113,7 @@ const activeLink = ref("");
 </script>
 
 <style lang="scss" scoped>
+@use "/src/assets/styles/partials/variables" as v;
 nav {
   position: sticky;
   top: 0;
@@ -181,7 +182,7 @@ nav {
   .mobile-dropdown {
     display: none;
   }
-  @media #{$media-mobile} {
+  @media #{v.$media-mobile} {
     .nav-content {
       .nav-list,
       .buttons {

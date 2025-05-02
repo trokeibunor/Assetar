@@ -71,7 +71,7 @@ const fourthQ = ref(false);
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/variables.scss";
+@use "/src/assets/styles/partials/variables" as v;
 .frequently {
   margin: 2rem 0px;
   padding: 2rem 0px;
@@ -110,7 +110,7 @@ const fourthQ = ref(false);
     }
   }
 }
-@media #{$media-mobile} {
+@media #{v.$media-mobile} {
   .frequently {
     width: 90%;
     .fqIntro {

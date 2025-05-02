@@ -71,6 +71,7 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+@use "/src/assets/styles/partials/variables" as v;
 section {
   background: var(--Grey-bglast, #f9fbfc);
   padding: 2rem 0px;
@@ -129,7 +130,7 @@ section {
       }
     }
   }
-  @media #{$media-mobile} {
+  @media #{v.$media-mobile} {
     .content {
       .intro {
         text-align: left;

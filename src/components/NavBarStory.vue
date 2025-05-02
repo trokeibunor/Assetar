@@ -80,7 +80,7 @@ function routeTo(x) {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/variables.scss";
+@use "/src/assets/styles/partials/variables" as v;
 nav {
   display: flex;
   flex-direction: row;
@@ -125,12 +125,12 @@ aside {
   display: none;
 }
 // Mobile responsiveness
-@media #{$media-tablet} {
+@media #{v.$media-tablet} {
   nav {
     width: 90%;
   }
 }
-@media #{$media-mobile} {
+@media #{v.$media-mobile} {
   nav {
     position: sticky;
     z-index: 10;
