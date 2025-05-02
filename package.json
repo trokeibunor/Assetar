@@ -12,7 +12,7 @@
     "lintfix": "prettier --write --list-different . && npm run lint:js --fix"
   },
   "dependencies": {
-    "@vitejs/plugin-legacy": "^6.1.1",
+    "@vitejs/plugin-legacy": "2.2.0",
     "gatsby-plugin-netlify": "^5.1.1",
     "gsap": "^3.11.1",
     "pinia": "^2.0.21",
