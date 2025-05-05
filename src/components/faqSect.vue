@@ -172,7 +172,7 @@
       }
       .left {
         .head {
-          font-size: 2rem;
+          font-size: 1rem;
           br {
             display: none;
           }
