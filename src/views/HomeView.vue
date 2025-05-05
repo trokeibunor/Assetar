@@ -26,7 +26,7 @@ import FooterSect from "../components/FooterSect.vue";
               href="https://wa.me/message/JJBUQRUINMSTM1"
               class="main-button"
               style="text-decoration: none"
-              >Trade with Us</a
+              >Click To Trade</a
             >
             <button
               class="outline-button"
