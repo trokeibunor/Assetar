@@ -156,7 +156,7 @@
             font-family: Mabry Pro;
             font-size: 1rem;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 400;
           }
         }
       }
@@ -172,7 +172,7 @@
       }
       .left {
         .head {
-          font-size: 1rem;
+          font-size: 2rem;
           br {
             display: none;
           }
