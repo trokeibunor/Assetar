@@ -4,44 +4,17 @@
       <p>Private, Personalized, Anonymous Digital Assets Trading</p>
     </div>
     <div class="nav-content">
-      <div
-        class="logo"
-        @click.prevent="$router.push('/')"
-      >
+      <div class="logo" @click.prevent="$router.push('/')">
         <img src="../assets/images//logo.png" alt="" />
         <h4>Assetar</h4>
       </div>
       <div class="nav-list">
-        <p
-          @click.prevent="$router.push('/about')"
-
-        >
-          About Us
-        </p>
-        <p
-          @click.prevent="$router.push('/about')"
-        >
-          About Us
-        </p>
-        <p
-          @click.prevent="$router.push('/#testimonial')"
-        >
-          Testimonials
-        </p>
-        <p
-          @click.prevent="$router.push('/#footer')"
-  
-        >
-          Contact us
-        </p>
+        <p @click.prevent="$router.push('/about')">About Us</p>
+        <p @click.prevent="$router.push('/#testimonial')">Testimonials</p>
+        <p @click.prevent="$router.push('/#footer')">Contact us</p>
       </div>
       <div class="buttons">
-        <p
-          @click.prevent="$router.push('/#footer')"
-        
-        >
-          Socials
-        </p>
+        <p @click.prevent="$router.push('/#footer')">Socials</p>
         <a href="https://wa.me/message/JJBUQRUINMSTM1" target="_blank"
           >Get Started</a
         >
@@ -50,7 +23,6 @@
         class="hamburger hamburger--spring"
         :class="isActive ? 'is-active' : ''"
         @click.prevent="isActive = !isActive"
-      
         type="button"
       >
         <span class="hamburger-box">
