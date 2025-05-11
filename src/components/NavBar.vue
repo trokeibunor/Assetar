@@ -15,7 +15,7 @@
       </div>
       <div class="buttons">
         <p @click.prevent="$router.push('/#footer')">Socials</p>
-        <a href="https://wa.me/message/JJBUQRUINMSTM1" target="_blank"
+        <a href="https://wa.link/e4vjdn" target="_blank"
           >Get Started</a
         >
       </div>

@@ -15,7 +15,7 @@ import faqSect from "../components/faqSect.vue";
           </h2>
           <div class="button-row">
             <a
-              href="https://wa.me/message/JJBUQRUINMSTM1"
+              href="https://wa.link/e4vjdn"
               class="main-button"
               style="text-decoration: none"
               target="_blank"
@@ -51,7 +51,7 @@ import faqSect from "../components/faqSect.vue";
           <div class="btn-hold">
             <a
               id="hello"
-              href="https://wa.me/message/JJBUQRUINMSTM1"
+              href="https://wa.link/e4vjdn"
               target="_blank"
               >Get Started</a
             >
