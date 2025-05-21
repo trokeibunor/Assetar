@@ -5,9 +5,9 @@
         <h5>Contact Us</h5>
         <ul>
           <li>
-            <a href="tel:+2348034460010">
+            <a href="tel:+2349071557346">
               <!-- <img src="../assets/images/phone_icon.svg" alt="" /> -->
-              +2348034460010</a
+              +2349071557346</a
             >
           </li>
           <li>
