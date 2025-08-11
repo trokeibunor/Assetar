@@ -12,6 +12,21 @@
         <div class="testimonial">
           <div class="content">
             <p class="word">
+              Assetar in the best I’ve been with, no cap, quick exchange and
+              deals are always done the way it should be
+            </p>
+            <div class="btm">
+              <div class="author">
+                <div class="name">Anonymous</div>
+                <img src="../assets/images/svg/stars.svg" alt="" />
+              </div>
+              <img src="../assets/images/png/inverted-comma.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- <div class="testimonial">
+          <div class="content">
+            <p class="word">
               Assetar is the best I've been with no cap, quick exchange and
               deals are always done the way it should be ngl
             </p>
@@ -23,7 +38,7 @@
               <img src="../assets/images/png/inverted-comma.png" alt="" />
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="testimonial">
           <div class="content">
             <p class="word">

@@ -3,7 +3,7 @@
     <div class="content">
       <h2 class="intro">Our Values</h2>
       <p class="subheader">
-        What makes us the best option <br />
+        We are the best option for these reasons <br />
         count on us to deliver when you need speedy, secure transactions
       </p>
       <div class="offer-grid">
@@ -12,10 +12,9 @@
             <img src="../assets/images/svg/security.svg" alt="" />
           </div>
           <div class="g-con">
-            <h3>Safety</h3>
+            <h3>Decentralization</h3>
             <p>
-              We ensure all transactions are done through secure and safe
-              channels, directly to our customer's account.
+              All transactions are routed through Decentralized channels to ensure complete privacy and protection
             </p>
           </div>
         </div>
@@ -26,9 +25,8 @@
           <div class="g-con">
             <h3>Personalized</h3>
             <p>
-              We tend to each of our customers individual need and ensure that
-              there every transaction is carried out in the interest of the
-              customer
+              We attend to each customer specially, catering to and Educating
+              you on the best practice, depending on your trading goals
             </p>
           </div>
         </div>
@@ -37,10 +35,10 @@
             <img src="../assets/images/svg/prices.svg" alt="" />
           </div>
           <div class="g-con">
-            <h3>Prices</h3>
+            <h3>Non - Custodial</h3>
             <p>
-              We ensure that we deliver the best rates to each and every
-              customer, ensuring or service is useable by all walks
+              We do not hold your funds, you are in control of your assets at
+              all times, we only facilitate the transaction
             </p>
           </div>
         </div>
@@ -49,10 +47,10 @@
             <img src="../assets/images/svg/safe.svg" alt="" />
           </div>
           <div class="g-con">
-            <h3>Stess Free</h3>
+            <h3>Confidential</h3>
             <p>
-              We ensure to the best of our ability that all our transactions are
-              stress free for all our customers
+              Every detail shared during the course of trading with is kept
+              strictly between both parties.
             </p>
           </div>
         </div>

@@ -14,12 +14,12 @@ import FooterSect from "../components/FooterSect.vue";
       <div class="text-section">
         <div class="content">
           <h2 class="intro-text">
-            Easy, fast and secure cryptocurrency exchange for everyone
+            Don’t be A Target: Exchange Built For Silence and Security.
           </h2>
           <p class="sub-text">
-            For a hassle-free cryptocurrency trading experience, we put a strong
-            emphasis on simplicity, speed, and security. Get started with your
-            first trade today.
+            Do you think all crypto transactions are anonymous & privatete? If
+            you answered yes - think again we help you cover the gaps that leave
+            you exposed
           </p>
           <div class="button-row">
             <a
@@ -49,9 +49,9 @@ import FooterSect from "../components/FooterSect.vue";
       <div class="content">
         <div id="cont">
           <div class="text-sect">
-            <h3>Let's Secure your Future with</h3>
+            <h3>Escape the Matrix</h3>
             <h3 id="second">
-              Our Service
+              Get started
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="54"
@@ -74,7 +74,8 @@ import FooterSect from "../components/FooterSect.vue";
               >Get Started</a
             >
             <p>
-              Join thousands of other folks to have the best trading experience
+              Join the growing network of individuals who value privacy,
+              automomy and a smarter way to transact.
             </p>
           </div>
         </div>

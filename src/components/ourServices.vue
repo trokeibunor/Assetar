@@ -4,62 +4,54 @@
       <div class="intro">
         <h2>How Assetar Works</h2>
         <p class="subheader">
-          At Assetar, we simplify the process of buying and exchanging <br />
-          cryptocurrency with fiat money. Our platform is designed to ensure a
+          Here's how we make it happen: We help facilitate the conversion of
+          Crypto currency <br />
+          into real life currency through the use of Non - custodial,
+          decentralized method and our extensive peer-to-peer Network
           <br />
-          seamless and secure experience for our users. Here's how we make it
-          happen:
+          Note: WE DO NOT HOLD USERS FUNDS OR HOLD FIAT.
         </p>
       </div>
       <div class="service-grid">
         <div class="grid-item">
           <div id="content">
             <img src="../assets/images/svg/cursor_icon.svg" alt="" />
-            <h3>Minimal transaction costs</h3>
+            <h3>Decentralization Education</h3>
             <p>
-              We keep our transaction costs minimal by optimizing our operations
-              and leveraging efficient blockchain networks. This allows us to
-              provide competitive rates for cryptocurrency trading while
-              ensuring that you get the maximum value for your transactions. Our
-              transparent fee structure means no hidden charges.
+              During our customer onboarding we find out our customers goals and
+              recommend tools to meet their desired level of privacy .
             </p>
           </div>
         </div>
         <div class="grid-item">
           <div id="content">
             <img src="../assets/images/svg/cursor_icon.svg" alt="" />
-            <h3>Fast and Convenient Transactions</h3>
+            <h3>Secure & Silent Processing</h3>
             <p>
-              With Assetar, you can buy, use, trade, and manage cryptocurrencies
-              quickly and conveniently using our online services. We make it
-              easy to buy cryptocurrency with fiat money and to exchange
-              cryptocurrency for fiat money. Additionally, our platform allows
-              you to build and manage your own portfolio effortlessly.
+              Every swap, payment, transfer er is done using decentralized
+              platforms that do not risk your privacy therefore removing any
+              risk of exposure for your through your funds
             </p>
           </div>
         </div>
         <div class="grid-item">
           <div id="content">
             <img src="../assets/images/svg/cursor_icon.svg" alt="" />
-            <h3>Secure and Reliable</h3>
+            <h3>Extensive Peer- to - Peer Network</h3>
             <p>
-              Our commitment to security means that you can trade with
-              confidence. We follow industry best practices to safeguard your
-              assets and personal information. Whether you're a seasoned trader
-              or new to the world of cryptocurrency, Assetar provides a reliable
-              and user-friendly platform for all your trading needs.
+              Payments in fiats are facilitated using our extensive peer to peer
+              network which ensures that your information is kept unexposed.
             </p>
           </div>
         </div>
         <div class="grid-item">
           <div id="content">
             <img src="../assets/images/svg/cursor_icon.svg" alt="" />
-            <h3>Messaging Applications Integration</h3>
+            <h3>Encrypted messaging Integration</h3>
             <p>
-              To enhance communication and support, we utilize popular messaging
-              applications. This allows us to provide timely assistance and
-              updates to our users, ensuring that you have the support you need
-              whenever you need it.
+              Communication between parties is done over end-to-end encrypted
+              platforms like WhatsApp to ensure your conversations are hidden
+              from prying eyes.
             </p>
           </div>
         </div>
