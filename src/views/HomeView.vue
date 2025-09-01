@@ -17,9 +17,9 @@ import FooterSect from "../components/FooterSect.vue";
             Don’t be A Target: Exchange Built For Silence and Security.
           </h2>
           <p class="sub-text">
-            Do you think all crypto transactions are anonymous & privatete? If
-            you answered yes - think again we help you cover the gaps that leave
-            you exposed
+            Do you think all crypto transactions are anonymous & private? If
+            answered yes - think again. <br />
+            We help you cover the gaps that leave you exposed
           </p>
           <div class="button-row">
             <a
