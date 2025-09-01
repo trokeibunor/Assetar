@@ -64,7 +64,7 @@ export default {
     openWhatsApp() {
       // const phoneNumber = '+1234567890'; // Your WhatsApp number
       // const message = 'Hello! How can we help you?';
-      const url = `https://wa.me/message/MDQQWHAO2DYZO1`;
+      const url = `https://wa.link/6mlyxm `;
       window.open(url, "_blank");
     },
   },

@@ -23,7 +23,7 @@ import FooterSect from "../components/FooterSect.vue";
           </p>
           <div class="button-row">
             <a
-              href="https://wa.me/message/MDQQWHAO2DYZO1"
+              href="https://wa.link/6mlyxm "
               class="main-button"
               style="text-decoration: none"
               >Click To Trade</a
@@ -69,7 +69,7 @@ import FooterSect from "../components/FooterSect.vue";
           <div class="btn-hold">
             <a
               id="hello"
-              href="https://wa.me/message/MDQQWHAO2DYZO1"
+              href="https://wa.link/6mlyxm "
               target="_blank"
               >Get Started</a
             >
