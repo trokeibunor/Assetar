@@ -5,7 +5,6 @@ import ourOffers from "../components/ourOffers.vue";
 import ourServices from "../components/ourServices.vue";
 import TestimonialSect from "../components/TestimonialSect.vue";
 import FooterSect from "../components/FooterSect.vue";
-// import { ref, onMounted } from "vue";
 </script>
 <template>
   <NavBar />
@@ -23,17 +22,20 @@ import FooterSect from "../components/FooterSect.vue";
           </p>
           <div class="button-row">
             <a
-              href="https://wa.link/6mlyxm "
+              href="https://wa.link/wdbuar"
+              target="_blank"
               class="main-button"
               style="text-decoration: none"
               >Click To Trade</a
             >
-            <button
+            <a
               class="outline-button"
-              @click.prevent="$router.push('#offers')"
+              href="https://wa.link/6mlyxm"
+              target="_blank"
+              style="text-decoration: none"
             >
-              Learn More
-            </button>
+              Free Crypto Privacy Consultation
+            </a>
           </div>
         </div>
       </div>
@@ -67,10 +69,7 @@ import FooterSect from "../components/FooterSect.vue";
             </h3>
           </div>
           <div class="btn-hold">
-            <a
-              id="hello"
-              href="https://wa.link/6mlyxm "
-              target="_blank"
+            <a id="hello" href="https://wa.link/wdbuar" target="_blank"
               >Get Started</a
             >
             <p>
@@ -90,11 +89,8 @@ $media-tablet: "only screen and (max-width : 768px)";
 $media-mobile: "only screen and (max-width : 600px)";
 $media-mobile-sm: "only screen and (max-width : 480px)";
 $media-desktop-strict: "only screen and (min-width: 768px)";
-// pop up styles
 main {
   width: 100%;
-  // display: relative;
-  // overflow: hidden;
   section.hero {
     display: flex;
     gap: 2rem;

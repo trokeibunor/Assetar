@@ -15,13 +15,12 @@ import faqSect from "../components/faqSect.vue";
           </h2>
           <div class="button-row">
             <a
-              href="https://wa.link/6mlyxm "
+              href="https://wa.link/wdbuar"
               class="main-button"
               style="text-decoration: none"
               target="_blank"
               >Trade with Us</a
             >
-            <!-- <button class="outline-button">Learn More</button> -->
           </div>
         </div>
       </div>
@@ -49,10 +48,7 @@ import faqSect from "../components/faqSect.vue";
             </h3>
           </div>
           <div class="btn-hold">
-            <a
-              id="hello"
-              href="https://wa.link/6mlyxm "
-              target="_blank"
+            <a id="hello" href="https://wa.link/wdbuar" target="_blank"
               >Get Started</a
             >
             <p>
