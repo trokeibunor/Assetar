@@ -175,6 +175,11 @@ main {
       .text-section {
         .content {
           width: 90%;
+          .button-row {
+            width: 100%;
+            flex-direction: column;
+            gap: 0.5rem;
+          }
         }
         .notif {
           p {
