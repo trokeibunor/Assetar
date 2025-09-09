@@ -28,7 +28,7 @@ button {
   font-weight: 700;
   @media #{v.$media-mobile} {
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 16px 32px;
     border-radius: 8px;
   }
 }
@@ -46,7 +46,7 @@ button {
   font-weight: 700;
   @media #{v.$media-mobile} {
     font-size: 0.95rem;
-    padding: 0.5rem 1rem;
+    padding: 16px 32px;
     border-radius: 8px;
   }
 }
