@@ -10,10 +10,6 @@
         src="https://cdn.brandfetch.io/id8fwcm2BN/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
       />
-      <img
-        src="https://cdn.brandfetch.io/id_9cjxPXk/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
-        alt=""
-      />
       <img src="../assets/svgs/exodus-seeklogo.svg" alt="" />
       <img
         src="https://cdn.brandfetch.io/idChRKdWP4/w/512/h/512/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
