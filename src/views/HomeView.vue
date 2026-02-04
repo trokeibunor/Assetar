@@ -22,7 +22,7 @@ import FooterSect from "../components/FooterSect.vue";
           </p>
           <div class="button-row">
             <a
-              href="https://wa.link/wdbuar"
+              href="https://wa.link/assetartrade"
               target="_blank"
               class="main-button"
               style="text-decoration: none"
@@ -30,7 +30,7 @@ import FooterSect from "../components/FooterSect.vue";
             >
             <a
               class="outline-button"
-              href="https://wa.link/6mlyxm"
+              href="https://wa.link/assetarconsultation"
               target="_blank"
               style="text-decoration: none"
             >
@@ -69,7 +69,7 @@ import FooterSect from "../components/FooterSect.vue";
             </h3>
           </div>
           <div class="btn-hold">
-            <a id="hello" href="https://wa.link/wdbuar" target="_blank"
+            <a id="hello" href="https://wa.link/assetartrade" target="_blank"
               >Get Started</a
             >
             <p>

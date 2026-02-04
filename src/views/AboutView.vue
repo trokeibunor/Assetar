@@ -15,7 +15,7 @@ import faqSect from "../components/faqSect.vue";
           </h2>
           <div class="button-row">
             <a
-              href="https://wa.link/wdbuar"
+              href="https://wa.link/assetartrade"
               class="main-button"
               style="text-decoration: none"
               target="_blank"
@@ -48,7 +48,7 @@ import faqSect from "../components/faqSect.vue";
             </h3>
           </div>
           <div class="btn-hold">
-            <a id="hello" href="https://wa.link/wdbuar" target="_blank"
+            <a id="hello" href="https://wa.link/assetartrade" target="_blank"
               >Get Started</a
             >
             <p>
