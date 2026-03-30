@@ -11,15 +11,17 @@
         alt=""
       />
       <img src="../assets/svgs/exodus-seeklogo.svg" alt="" />
-      <img
+      <!-- <img
         src="https://cdn.brandfetch.io/idChRKdWP4/w/512/h/512/theme/dark/logo.png?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
-      />
+      /> -->
+      <img src="../assets/svgs/Trust_Wallet_Core_Logo_Blue.svg" alt="" />
+      <img src="https://cdn.brandfetch.io/domain/pancakeswap.finance/w/400/h/400?c=1idtG5U-VMK6lGmiLhC" alt="">
       <img
         src="https://cdn.brandfetch.io/id_HKIytUb/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
         alt=""
       />
-      <img src="../assets/svgs/Trust_Wallet_Core_Logo_Blue.svg" alt="" />
+      <img src="https://cdn.brandfetch.io/domain/tronlink.org/w/400/h/400?c=1idtG5U-VMK6lGmiLhC" alt="">
     </div>
   </section>
 </template>

@@ -13,12 +13,11 @@ import FooterSect from "../components/FooterSect.vue";
       <div class="text-section">
         <div class="content">
           <h2 class="intro-text">
-            Don’t be A Target: Exchange Built For Silence and Security.
+            Don’t be A Target: The Only Exchange Built For Total Silence
           </h2>
           <p class="sub-text">
-            Do you think all crypto transactions are anonymous & private? If
-            answered yes - think again. <br />
-            We help you cover the gaps that leave you exposed
+            Decentralized Trading is confusing, and one wrong click can cost you eveyrything. <br />
+            We handle the technical complexity for you ensuring your trades are invisible-- so you can build quiet wealth with 100% peace of mind
           </p>
           <div class="button-row">
             <a
